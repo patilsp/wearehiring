@@ -22,6 +22,7 @@ import {
   DropdownMenuShortcut,
   DropdownMenuTrigger,
 } from "@/registry/new-york/ui/dropdown-menu"
+import { Button } from "@/registry/new-york/ui/button"
 
 const Nav = () => {
   const { data: session } = useSession();
@@ -153,16 +154,16 @@ const Nav = () => {
                 >
             {providers &&
               Object.values(providers).map((provider) => (
-                <button
+                <Button
                   type="button"
                   key={provider.name}
                   onClick={() => {
                     signIn(provider.id);
                   }}
-                  className="black_btn"
+                  className=""
                 >
                   Sign in
-                </button>
+                </Button>
               ))}
               </motion.div> 
           </>

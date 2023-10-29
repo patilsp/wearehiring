@@ -32,7 +32,6 @@ export const docsConfig: DocsConfig = {
   ],
   sidebarNav: [
     {
-      title: "General",
       items: [
         {
           title: "Help",

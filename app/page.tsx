@@ -38,7 +38,7 @@ export default function Home() {
           <div className="mx-auto flex w-full flex-col justify-center space-y-6 sm:w-[555px]">
             <div className="flex flex-col space-y-2 text-center">
               <div className="text-left">
-                  <p className="text-left text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white sm:text-5xl lg:text-6xl">Lets Find Your <br /> Dream Job Here </p>
+                  <p className="text_primary text-left text-4xl font-extrabold tracking-tight dark:text-white sm:text-5xl lg:text-6xl">Lets Find Your <br /> Dream Job Here </p>
                   <p className="mt-6 text-lg leading-8 text-slate-700">Join the best tech startups in the industry</p>
                  
                   <motion.p
@@ -49,7 +49,7 @@ export default function Home() {
                     Join the best tech startups in the industry.
                 </motion.p>
                   <div className="items-left justify-left mt-10 flex gap-x-6">
-                  <Link href="/jobs-dashboard" className="rounded border bg-slate-900 px-4 py-2 font-semibold text-white shadow hover:bg-slate-700 hover:text-white">Get started</Link>
+                  <Link href="/jobs-dashboard" className="btn-primary">Get started</Link>
                   <a href="#" className="mt-2 text-sm font-semibold leading-6 text-slate-900">Learn more <span aria-hidden="true">→</span></a>
                   </div>
               </div>
