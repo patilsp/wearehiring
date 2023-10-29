@@ -209,15 +209,20 @@ body::-webkit-scrollbar-thumb {
 
 .mobile_nav a {
   text-decoration: none;
-  color: #1E1E23;
-  opacity: 1;
-  font-family: 'work sans', sans serif;
-  font-size: 2em;
-  font-weight: 600;
-  transition: 200ms;
+    color: #1E1E23;
+    opacity: 1;
+    font-family: 'work sans', sans serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: 200ms;
+    width: 220px;
+    border-radius: 5px;
+    padding: 1px 10px;
 }
 a:hover {
   opacity:0.5;
+  background: linear-gradient(120deg,#4ca5ff,#b573f8);
+  color: #f7f7f7;
 }
 
 .text_primary {
