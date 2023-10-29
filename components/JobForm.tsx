@@ -2,9 +2,8 @@
 "use client"
 
 import React from 'react';
-import Link from 'next/link';
-
-import { Button } from "@/components/ui/button"
+import Link from 'next/link'
+import { Button } from "@/registry/new-york/ui/button"
 import {
   Card,
   CardContent,
