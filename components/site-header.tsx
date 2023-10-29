@@ -8,7 +8,7 @@ import { CommandMenu } from "@/components/command-menu"
 import { Icons } from "@/components/icons"
 import { MainNav } from "@/components/main-nav"
 import { MobileNav } from "@/components/mobile-nav"
-import Nav from "@/components/nav"
+import Nav from "@/components/Nav"
 
 
 export function SiteHeader() {
