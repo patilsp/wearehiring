@@ -15,6 +15,7 @@ export function SiteHeader() {
   return (
     <header className="supports-backdrop-blur:bg-background/60 sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur">
    
+   
           <div className="flex h-14 w-full items-center justify-between gap-1 px-4 "> 
             <MobileNav />           
             <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
