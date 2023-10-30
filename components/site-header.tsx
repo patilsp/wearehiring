@@ -13,10 +13,10 @@ import { motion } from "framer-motion"
 
 export function SiteHeader() {
   return (
-
+    <motion.div>
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
     
-    <motion.div
+  
         initial={{ opacity: 0, y: 50 }} 
         animate={{ opacity: 1, y: 0 }}    
         transition={{ duration: 1, delay: 1 }} 
@@ -35,8 +35,9 @@ export function SiteHeader() {
                 </nav>
               </div>
             </div>
-            </motion.div>
+         
       </header>
+      </motion.div>
 
   )
 }
