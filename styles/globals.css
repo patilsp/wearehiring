@@ -79,7 +79,16 @@
     @apply px-4;
   }
 }
-
+:root {
+  --shiki-color-text: lab(27.5348% 0 0);
+  --shiki-token-constant: lab(48.3994% .649333 -55.5719);
+  --shiki-token-string: lab(49.1367% -42.0409 31.8582);
+  --shiki-token-comment: lab(69.608% -.0000298023 0);
+  --shiki-token-keyword: lab(47.8876% 63.025 42.31);
+  --shiki-token-parameter: lab(72.7377% 33.9074 77.3632);
+  --shiki-token-function: lab(39.0339% 41.1896 -60.5821);
+  --shiki-token-punctuation: lab(12.7448% 0 0);
+}
 
 
 /* .blue_gradient{
@@ -209,14 +218,14 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-/* .text_primary {
+.text_primary {
   background: linear-gradient(30deg,#4ca5ff,#b573f8);
   -webkit-background-clip: text;
   background-clip: text !important;
   -webkit-text-fill-color: transparent;
   text-fill-color: transparent !important;
   font-weight: 600;
-} */
+}
 
 .heading{
   background: linear-gradient(30deg,#4ca5ff,#b573f8);
@@ -257,6 +266,23 @@ body::-webkit-scrollbar-thumb {
     position: relative;
     width: -moz-max-content;
     width: max-content;
+}
+
+.hero-heading {
+  width: 100%;
+  text-align: left;
+  text-transform: uppercase;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(#d7816a,#bd4f6c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-right: 0;
+  font-family: Inter,sans-serif;
+  font-weight: 900;
+  line-height: 57px;
 }
 
 .job-card {

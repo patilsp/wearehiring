@@ -12,6 +12,7 @@ import { Icons } from "@/components/icons"
 import { Button } from "@/registry/new-york/ui/button"
 import { ScrollArea } from "@/registry/new-york/ui/scroll-area"
 import { Sheet, SheetContent, SheetTrigger } from "@/registry/new-york/ui/sheet"
+import { motion } from "framer-motion"
 
 export function MobileNav() {
   const [open, setOpen] = React.useState(false)
@@ -28,16 +29,21 @@ export function MobileNav() {
           <span className="sr-only">Toggle Menu</span>
         </Button>
       </SheetTrigger>
-      <SheetContent side="left" className="pr-0">
+      <SheetContent side="left" className="w-full pr-0">
         <MobileLink
           href="/"
           className="flex items-center"
           onOpenChange={setOpen}
         >
           {/* <Icons.logo className="mr-2 h-4 w-4" /> */}
-          <span className="text_primary text-2xl font-bold">{siteConfig.name}</span>
+          <span className="hero-heading text-2xl font-bold">{siteConfig.name}</span>
         </MobileLink>
-        <ScrollArea className="my-4 h-[calc(100vh-8rem)] pb-10 pl-1">
+        <ScrollArea className="my-4 h-[calc(100vh-10rem)] pb-10 pl-1">
+        <motion.div
+            initial={{ opacity: 0, x: -100 }} 
+            animate={{ opacity: 1, x: 0 }}     
+            transition={{ duration: 1, delay: 1 }}  
+          >
           <div className="mobile_nav flex flex-col space-y-3">
             {docsConfig.mainNav?.map(
               (item) =>
@@ -52,6 +58,14 @@ export function MobileNav() {
                 )
             )}
           </div>
+          </motion.div>
+
+
+          <motion.div
+            initial={{ opacity: 0, x: -100 }} 
+            animate={{ opacity: 1, x: 0 }}     
+            transition={{ duration: 1, delay: 1 }}  
+          >
           <div className="flex flex-col space-y-2">
             {docsConfig.sidebarNav.map((item, index) => (
               <div key={index} className="mobile_nav flex flex-col space-y-3">
@@ -76,6 +90,7 @@ export function MobileNav() {
               </div>
             ))}
           </div>
+          </motion.div>
         </ScrollArea>
       </SheetContent>
     </Sheet>

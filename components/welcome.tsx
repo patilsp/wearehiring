@@ -105,7 +105,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="text-center">
-                    <h1 className="font-display mt-6 block max-w-5xl text-5xl font-bold tracking-tight text-neutral-950 [text-wrap:balance] dark:text-white sm:text-6xl">Transforming job <br /> <p className="gradient_blue"> search experience.</p></h1>
+                    <h1 className="heading font-display mt-6 block max-w-5xl text-4xl font-bold tracking-tight text-neutral-950 [text-wrap:balance] dark:text-white sm:text-left md:text-5xl">Transforming job <br /> <p className="gradient_blue"> search experience.</p></h1>
                     <h3 className="mt-3 text-lg leading-8 text-slate-700">Explore an extensive database of jobs from top companies with help of AI </h3>
                     <p className="mt-1 text-lg leading-6 text-slate-600">Join the best tech startups in the industry</p>
                     <div className="mt-10 flex items-center justify-center gap-x-6">
@@ -123,11 +123,11 @@ export default function Home() {
 
 
           <div className="mb-4 flex w-full justify-center">
-            <h2 className="font-heading text-3xl font-bold leading-[1.1] sm:text-3xl md:text-6xl">
+            <h2 className="heading font-heading text-3xl font-bold leading-[1.1] sm:text-3xl md:text-6xl">
               Our Partners
             </h2>
           </div>
-          <div className="item-center flex max-w-full flex-row justify-center">
+          <div className="item-center m-auto flex max-w-[85%] flex-row justify-center">
           
             <div className="slider">           
               <div className="slide-track flex">
@@ -171,7 +171,7 @@ export default function Home() {
           transition={{ duration: 1, delay: 1 }} 
         >
         <div className="mx-auto mb-4 flex max-w-[58rem] flex-col items-center space-y-4 text-center">
-          <h2 className="font-heading text-3xl font-bold leading-[1.1] sm:text-3xl md:text-6xl">
+          <h2 className="font-heading text-3xl font-bold leading-[1.1] sm:text-xl md:text-6xl">
             Easy way to get your next job
           </h2>
           <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">

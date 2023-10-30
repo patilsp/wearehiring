@@ -13,20 +13,32 @@ export const docsConfig: DocsConfig = {
       href: "/",
     },
     {
-      title: "Dashboard",
-      href: "/dashboard",
+      title: "Find Job",
+      href: "/jobs-dashboard",
     },
     {
-      title: "Customers",
+      title: "Companies",
       href: "/customers",
     },
     {
-      title: "Products",
-      href: "/products",
+      title: "Applications",
+      href: "/Applications",
     },
     {
-      title: "Tasks",
-      href: "/tasks",
+      title: "Hire",
+      href: "/jobs-dashboard",
+    },
+     {
+      title: "Settings",
+      href: "/forms",
+    },
+    {
+      title: "FAQ",
+      href: "/",
+    },
+    {
+      title: "User Settings",
+      href: "/forms",
     },
     
   ],
