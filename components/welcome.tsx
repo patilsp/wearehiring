@@ -264,7 +264,7 @@ export default function Home() {
  
           </motion.div>
       </section>
-
+      {/* <hr className="nx-my-8 dark:nx-border-gray-900"> */}
 
       <section className="container flex flex-col  gap-6 py-8 md:max-w-[64rem] md:py-12 lg:py-24">
         <div className="flex w-full justify-center">

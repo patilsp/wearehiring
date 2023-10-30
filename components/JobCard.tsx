@@ -28,7 +28,7 @@ const JobCard = ({ job, handleEdit, handleDelete, handleTagClick }) => {
   return (
     <div>
 
-    <div className="job-card">
+    <div className="job-card rounded-xl border bg-card text-card-foreground shadow">
       <div className="info  cursor-pointer " onClick={handleProfileClick}>
         <div className="avatar">
           <img src="//via.placeholder.com/200" alt="doc name" />

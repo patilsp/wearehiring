@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -48,6 +50,7 @@
     --ring: 240 4.9% 83.9%;
   }
 }
+
 
 @layer base {
   * {
@@ -113,7 +116,7 @@
   line-height: 1em;
   max-width: 100%;
   min-width: 100px;
-  max-width: 200px;
+  /* max-width: 200px; */
   padding: 10px 15px;
   text-decoration: none;
   -moz-user-select: none;
@@ -257,11 +260,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .job-card {
-  max-width: 800px;
-  background: #fff;
-  border-radius: 2px;
-  margin: auto;
-  position: relative;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   position: relative;
@@ -333,7 +331,7 @@ body::-webkit-scrollbar-thumb {
   border-collapse: collapse;
   border-radius: 3px;
   border-style: hidden;
-  box-shadow: 0 0 0 1px #f6f7f8;
+  box-shadow: 0 0 0 0.5px #f6f7f8;
 }
 .job-card .actions > div {
   text-align: center;
@@ -419,7 +417,6 @@ body::-webkit-scrollbar-thumb {
 }
 .job-card .locations {
   padding: 15px 15px 20px;
-  border-top: 1px solid #f6f7f8;
   border-radius: 0 0 2px 2px;
   line-height: 1;
   font-size: 12px;
