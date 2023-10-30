@@ -92,8 +92,8 @@ const JobForm = ({ type, post, setPost, submitting, handleSubmit }) => {
           />
         </div>
 
-      <div className="flex justify-between gap-2">
-        <div className="grid gap-2">
+      <div className="grid grid-cols-1 gap-2 md:grid-cols-3">
+        <div className="mb-2 grid gap-2">
           <Label htmlFor="date">Created Date</Label>
           <Input
             value={post.createddate}
@@ -104,13 +104,13 @@ const JobForm = ({ type, post, setPost, submitting, handleSubmit }) => {
           />
         </div>
 
-        <div className="grid gap-2">
+        <div className="mb-2 grid gap-2">
             <Label htmlFor="status">Job Type</Label>
             <Select>
               <SelectTrigger
                value={post.job_type}
                onChange={(e) => setPost({ ...post, job_type: e.target.value })}
-               className="line-clamp-1 w-[160px] truncate"
+               className="line-clamp-1 truncate"
               >
                 <SelectValue placeholder="Select Job Type" />
               </SelectTrigger>
@@ -124,14 +124,14 @@ const JobForm = ({ type, post, setPost, submitting, handleSubmit }) => {
         </div>
 
        
-        </div>
-        <div className="grid gap-2">
+        
+        <div className="mb-2 grid gap-2">
             <Label htmlFor="status">Status</Label>
             <Select>
               <SelectTrigger
                value={post.status}
                onChange={(e) => setPost({ ...post, status: e.target.value })}
-               className="line-clamp-1 w-[160px] truncate"
+               className="line-clamp-1 truncate"
               >
                 <SelectValue placeholder="Select Status" />
               </SelectTrigger>
@@ -141,7 +141,7 @@ const JobForm = ({ type, post, setPost, submitting, handleSubmit }) => {
               </SelectContent>
             </Select>
           </div>
-
+          </div>
         <div className='mx-3 mb-5 mt-3 flex justify-end gap-4'>
           <Link href='/customers' className='mr-2 mt-2 text-sm text-gray-500'>
             Cancel

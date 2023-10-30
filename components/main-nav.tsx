@@ -61,13 +61,13 @@ export function MainNav() {
           Companies
         </Link>
         <Link
-          href="/messages"
+          href="/jobs-dashboards"
           className={cn(
             "transition-colors hover:text-foreground/80",
             pathname === "/messages" ? "text-foreground" : "text-foreground/60"
           )}
         >
-          Messages
+          Hire
         </Link>
         <Link
           href="/forms"

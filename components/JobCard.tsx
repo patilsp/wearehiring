@@ -26,80 +26,51 @@ const JobCard = ({ job, handleEdit, handleDelete, handleTagClick }) => {
   };
 
   return (
-    <div
-    className="dark mb-4 space-y-6 rounded-md border-slate-100 bg-primary p-2 pb-4 shadow dark:bg-black sm:space-y-8 sm:p-10 sm:pb-8 lg:space-y-6 lg:p-6 xl:space-y-8 xl:p-10">
-      <div className='flex items-start gap-5'>
-        <div
-          className='flex flex-1 cursor-pointer justify-start gap-3'
-          onClick={handleProfileClick}
-        >
-          <Image
-            src='/images/logo31.png'
-            alt='company logo'
-            width={100}
-            height={100}
-            className='rounded-full'
-          />
+    <div>
 
-          <div className='flex flex-col'>
-            <h3 className='text-3xl font-bold text-slate-900'>
-              {job.job_title}
-            </h3>
-            <h3>
-              <div className='flex gap-4'>
-                <p className="text-sm font-semibold text-pink-400"> {job.job_company} company </p>
-                <p className="text-sm font-semibold text-slate-800"> {job.job_location} location</p>
-              </div>
-            </h3>
-          </div>
+    <div className="job-card">
+      <div className="info  cursor-pointer " onClick={handleProfileClick}>
+        <div className="avatar">
+          <img src="//via.placeholder.com/200" alt="doc name" />
         </div>
-         
-
-         <div>
-            <h1 className="rounded-2xl bg-slate-100 px-3 py-1 text-xs font-bold text-slate-800"> 1 Week Left </h1>
-            <p className="p-1 text-xs text-slate-400"> Published Feb 10 2023 </p>
-
-          </div>
-
-        <div className='copy_btn mt-1 bg-slate-100' onClick={handleCopy}>
-          <Image
-            src={
-              copied === job.description
-                ? "/assets/icons/tick.svg"
-                : "/assets/icons/copy.svg"
-            }
-            alt={copied === job.description ? "tick_icon" : "copy_icon"}
-            width={12}
-            height={12}
-          />
+        <div className="details">
+            <div className="name">{job.job_title}</div>
+            <div className="meta-info">
+              <span className="sp">{job.job_company} company</span>
+              <span className="prac-area"> {job.job_location} location</span>
+              <span className="exp-yr">10 years exp.</span>
+            </div>
+        </div>
+       
+      </div>
+      <div className="actions">
+        <div className="ratings">
+          <span className="rating-control">
+            <i className="fa fa-star"></i>
+            <i className="fa fa-star"></i>
+            <i className="fa fa-star-half-o"></i>
+            <i className="fa fa-star-o"></i>
+            <i className="fa fa-star-o"></i>
+          </span>
+          <span className="rating-count">000 Ratings</span>
+        </div>
+        <div className="comments">
+          <span className="comment-count"><strong>1K</strong> Applicants</span>
+        </div>
+        <div className="consultation">
+          <span className="fee"><strong>3K</strong>Viewed</span>
+        </div>
+        <div className="appo">
+          <a href="#" className="btn">Apply Now</a>
         </div>
       </div>
-      <div className='flex gap-10'>
-        <p className='text-sm font-extrabold tracking-tight text-slate-900'>
-          <BriefcaseIcon className="mr-1 inline-block h-4 w-4 text-slate-500" /> Full Time
-        </p>
-        <p className='text-sm font-extrabold tracking-tight text-slate-900'>
-          <UserIcon className="mr-1 inline-block h-4 w-4 text-slate-500" /> 3 Yr Experience
-        </p>
-        <p className='text-sm font-extrabold tracking-tight text-slate-900'>
-          <CurrencyDollarIcon className="mr-1 inline-block h-4 w-4 text-slate-500" /> ${job.salary}/Month
-        </p>
-        <p className='text-sm font-extrabold tracking-tight text-slate-900'>
-          <HomeIcon className="mr-1 inline-block h-4 w-4 text-slate-500" />WFO
-          </p>
-        <p className='text-sm font-extrabold tracking-tight text-slate-900'>
-          <UserIcon className="mr-1 inline-block h-4 w-4 text-slate-500" />100 Application
-        </p>
-
-        {/* <p
-            className='font-inter blue_gradient cursor-pointer text-sm'
-            onClick={() => handleTagClick && handleTagClick(job.job_title)}
-          >
-            #{job.tag}
-          </p> */}
+      <div className="locations">
+        {job.description}
       </div>
-      {/* <p className='mt-4 text-3xl sm:text-4xl text-slate-900 font-extrabold tracking-tight dark:text-slate-50 '>{job.description}</p> */}
+	</div>
 
+
+   
   
      {session?.user.id === job.creator._id && pathName === "/profile" && (
         <div className='flex-center mt-5 gap-4 border-t border-slate-100 pt-3'>

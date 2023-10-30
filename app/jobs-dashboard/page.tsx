@@ -45,7 +45,7 @@ export default function MusicPage() {
                       </TabsList>
                       <div className="ml-auto hidden md:block">
                         <Link href="create-job">
-                        <Button className="bg-pink-400 text-white hover:bg-pink-700">
+                        <Button>
                           <PlusCircledIcon className="mr-2 h-4 w-4" />
                            Add New
                         </Button>
@@ -57,7 +57,7 @@ export default function MusicPage() {
                       className="border-none p-0 outline-none"
                     >
                       <div className="flex items-center justify-between">
-                        <div className="space-y-1">
+                        <div className="hidden space-y-1 md:block">
                           <h2 className="blue_gradient text-2xl font-semibold tracking-tight">
                             Recommended Jobs
                           </h2>

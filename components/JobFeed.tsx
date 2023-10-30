@@ -69,7 +69,7 @@ const JobFeed = () => {
 
   return (
     <section className='feed '>
-      <form className='relative top-[-50px] flex w-full justify-end'>
+      <form className='relative mb-2 flex w-full justify-end md:top-[-50px]'>
         <input
           type='text'
           placeholder='Search for a title or a location'
