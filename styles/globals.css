@@ -107,7 +107,6 @@
   box-sizing: border-box;
   color: #FFFFFF;
   display: flex;
-  /* font-family: Phantomsans, sans-serif; */
   font-size: 14px;
   justify-content: center;
   align-items: center;
@@ -149,9 +148,6 @@
  }
 
 
-
-HTML CSSResult Skip Results Iframe
-EDIT ON
 html {
   --scrollbarBG: #CFD8DC;
   --thumbBG: #90A4AE;
@@ -219,7 +215,46 @@ body::-webkit-scrollbar-thumb {
   font-weight: 600;
 } */
 
+.heading{
+  background: linear-gradient(30deg,#4ca5ff,#b573f8);
+  -webkit-background-clip: text;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent !important;
+  font-weight: 600;
+}
 
+.welcome-card:hover {
+  border: 2px solid #AF40FF;
+}
+
+
+.welcome-card:hover h3{
+  background: linear-gradient(30deg,#4ca5ff,#b573f8);
+  -webkit-background-clip: text;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent !important;
+  font-weight: 600;
+}
+
+
+
+.sub-heading{
+  isolation: isolate;
+    overflow: hidden;
+    align-items: center;
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    border-radius: 32px;
+    box-shadow: inset 0 -7px 11px #a48fff1f;
+    display: flex;
+    margin: 0 auto 12px;
+    padding: 6px 25px 6px 25px;
+    position: relative;
+    width: -moz-max-content;
+    width: max-content;
+}
 
 .job-card {
   max-width: 800px;
@@ -461,7 +496,7 @@ body::-webkit-scrollbar-thumb {
   border: none;
   padding: 12px 30px;
   border-radius: 6px;
-  background-color: #ecbd00;
+  background-color: #000;
   cursor: pointer;
 }
 .input-box .button.clicked {
@@ -487,3 +522,4 @@ body::-webkit-scrollbar-thumb {
     padding: 8px 18px;
   }
 }
+

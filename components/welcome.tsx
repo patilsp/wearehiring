@@ -105,14 +105,14 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="text-center">
-                    <h1 className="font-display mt-6 block max-w-5xl text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] dark:text-white sm:text-6xl">Transforming job <br /> <p className="gradient_blue"> search experience.</p></h1>
+                    <h1 className="font-display mt-6 block max-w-5xl text-5xl font-bold tracking-tight text-neutral-950 [text-wrap:balance] dark:text-white sm:text-6xl">Transforming job <br /> <p className="gradient_blue"> search experience.</p></h1>
                     <h3 className="mt-3 text-lg leading-8 text-slate-700">Explore an extensive database of jobs from top companies with help of AI </h3>
                     <p className="mt-1 text-lg leading-6 text-slate-600">Join the best tech startups in the industry</p>
                     <div className="mt-10 flex items-center justify-center gap-x-6">
-                    <div class="input-box">
-                      <i class="uil uil-search"></i>
+                    <div className="input-box">
+                      <i className="uil uil-search"></i>
                       <input type="text" placeholder="Try Software Developer, Tester..." />
-                      <button class="button">Search</button>
+                      <button className="button">Search</button>
                     </div>
                     </div>
                 </div>
@@ -179,8 +179,11 @@ export default function Home() {
             like auth, subscriptions.
           </p>
         </div>
+
+
         <div className="mx-auto grid justify-center gap-4 sm:grid-cols-2 md:max-w-[64rem] md:grid-cols-3">
-          <div className="relative overflow-hidden rounded-lg border bg-background p-2">
+          
+          <div className="welcome-card relative overflow-hidden rounded-lg border bg-background p-2">
             <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
               {/* <FaLogin className="h-12 w-12 fill-current" /> */}
               <FaRegistered className="h-12 w-12 fill-current" />
@@ -192,7 +195,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="relative overflow-hidden rounded-lg border bg-background p-2">
+
+          <div className="welcome-card relative overflow-hidden rounded-lg border bg-background p-2">
             <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
               <FaSearch className="h-12 w-12 fill-current" />
               <div className="space-y-2">
@@ -203,7 +207,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="relative overflow-hidden rounded-lg border bg-background p-2">
+
+          <div className="welcome-card relative overflow-hidden rounded-lg border bg-background p-2">
             <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
               <FaUserLock className="h-12 w-12 fill-current" />
               <div className="space-y-2">
@@ -214,7 +219,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="relative overflow-hidden rounded-lg border bg-background p-2">
+          <div className="welcome-card relative overflow-hidden rounded-lg border bg-background p-2">
             <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
               <FaRegSun className="h-12 w-12 fill-current" />
               <div className="space-y-2">
@@ -225,7 +230,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="relative overflow-hidden rounded-lg border bg-background p-2">
+          <div className="welcome-card relative overflow-hidden rounded-lg border bg-background p-2">
             <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
               <FaShieldAlt className="h-12 w-12 fill-current" />
               <div className="space-y-2">
@@ -236,7 +241,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="relative overflow-hidden rounded-lg border bg-background p-2">
+          <div className="welcome-card relative overflow-hidden rounded-lg border bg-background p-2">
             <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
              <FaWallet className="h-12 w-12 fill-current" />
               <div className="space-y-2">
@@ -261,16 +266,19 @@ export default function Home() {
       </section>
 
 
-        <section className="container flex flex-col  gap-6 py-8 md:max-w-[64rem] md:py-12 lg:py-24">
-      <div className="mx-auto flex w-full flex-col gap-4 md:max-w-[58rem]">
+      <section className="container flex flex-col  gap-6 py-8 md:max-w-[64rem] md:py-12 lg:py-24">
+        <div className="flex w-full justify-center">
+          <h1 className="sub-heading"> Get Access </h1>
+        </div>
+      <div className="mx-auto flex w-full flex-col gap-4">
         <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
-          Simple, transparent pricing
+        We like keeping things simple, <p className="heading">One plan one price </p>
         </h2>
         <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
           Unlock all features including unlimited jobs for your application.
         </p>
       </div>
-      <div className="grid w-full items-start gap-10 rounded-lg border p-10 md:grid-cols-[1fr_200px]">
+      <div className="grid w-full items-start gap-10 rounded-lg p-10 shadow-md hover:border-blue-500 md:grid-cols-[1fr_200px]">
         <div className="grid gap-6">
           <h3 className="text-xl font-bold sm:text-2xl">
             What&apos;s included in the PRO plan
@@ -299,9 +307,9 @@ export default function Home() {
         </div>
         <div className="flex flex-col gap-4 text-center">
           <div >
-            <h4 className="mb-2 text-7xl font-bold">$15</h4>
+            <h4 className="mb-2 text-7xl font-bold">$10</h4>
             <p className="text-sm font-medium text-muted-foreground">
-              Billed Monthly
+              (if billed annually)
             </p>
           </div>
           <Link href="/login" className={cn(buttonVariants({ size: "lg" }))}>
