@@ -2,11 +2,11 @@ import Image from "next/image";
 
 const Loading = () => {
   return (
-    <div className='flex-center w-full'>
+    <div className="flex h-screen items-center justify-center">
       <Image
         src='assets/icons/loader.svg'
-        width={50}
-        height={50}
+        width={80}
+        height={80}
         alt='loader'
         className='object-contain'
       />

@@ -10,37 +10,37 @@ const MyProfile = () => {
   const router = useRouter();
   const { data: session } = useSession();
 
-  const [myPosts, setMyPosts] = useState([]);
+  const [myJobs, setMyJobs] = useState([]);
 
   useEffect(() => {
-    const fetchPosts = async () => {
-      const response = await fetch(`/api/users/${session?.user.id}/posts`);
+    const fetchJobs = async () => {
+      const response = await fetch(`/api/users/${session?.user.id}/jobs`);
       const data = await response.json();
 
-      setMyPosts(data);
+      setMyJobs(data);
     };
 
-    if (session?.user.id) fetchPosts();
+    if (session?.user.id) fetchJobs();
   }, [session?.user.id]);
 
-  const handleEdit = (post) => {
-    router.push(`/update-prompt?id=${post._id}`);
+  const handleEdit = (job) => {
+    router.push(`/update-job?id=${job._id}`);
   };
 
-  const handleDelete = async (post) => {
+  const handleDelete = async (job) => {
     const hasConfirmed = confirm(
-      "Are you sure you want to delete this prompt?"
+      "Are you sure you want to delete this job?"
     );
 
     if (hasConfirmed) {
       try {
-        await fetch(`/api/prompt/${post._id.toString()}`, {
+        await fetch(`/api/job/${job._id.toString()}`, {
           method: "DELETE",
         });
 
-        const filteredPosts = myPosts.filter((item) => item._id !== post._id);
+        const filteredJobs = myJobs.filter((item) => item._id !== job._id);
 
-        setMyPosts(filteredPosts);
+        setMyJobs(filteredJobs);
       } catch (error) {
         console.log(error);
       }
@@ -48,10 +48,11 @@ const MyProfile = () => {
   };
 
   return (
+    
     <Profile
       name='My'
       desc='Explore your personalized profile page. Unleash your creativity by sharing remarkable prompts and igniting inspiration in others through the magic of your imagination.'
-      data={myPosts}
+      data={myJobs}
       handleEdit={handleEdit}
       handleDelete={handleDelete}
     />

@@ -43,6 +43,9 @@ const JobCard = ({ job, handleEdit, handleDelete, handleTagClick }) => {
         </div>
        
       </div>
+      <div className="locations">
+        {job.description}
+      </div>
       <div className="actions">
         <div className="ratings">
           <span className="rating-control">
@@ -64,30 +67,25 @@ const JobCard = ({ job, handleEdit, handleDelete, handleTagClick }) => {
           <a href="#" className="btn">Apply Now</a>
         </div>
       </div>
-      <div className="locations">
-        {job.description}
-      </div>
-	</div>
-
-
-   
-  
+     
+	
      {session?.user.id === job.creator._id && pathName === "/profile" && (
-        <div className='flex-center mt-5 gap-4 border-t border-slate-100 pt-3'>
+        <div className='mt-5 flex items-center justify-end gap-4 rounded-xl border bg-slate-100 p-2'>
           <p
-            className='font-inter green_gradient cursor-pointer text-sm'
+            className='font-inter btn-green cursor-pointer text-sm'
             onClick={handleEdit}
           >
             Edit
           </p>
           <p
-            className='font-inter orange_gradient cursor-pointer text-sm'
+            className='font-inter btn-danger cursor-pointer text-sm'
             onClick={handleDelete}
           >
             Delete
           </p>
         </div>
       )}
+    </div>
     </div>
   );
 };

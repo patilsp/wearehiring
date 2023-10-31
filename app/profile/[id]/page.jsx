@@ -9,24 +9,24 @@ const UserProfile = ({ params }) => {
   const searchParams = useSearchParams();
   const userName = searchParams.get("name");
 
-  const [userPosts, setUserPosts] = useState([]);
+  const [userJobs, setUserJobs] = useState([]);
 
   useEffect(() => {
-    const fetchPosts = async () => {
-      const response = await fetch(`/api/users/${params?.id}/posts`);
+    const fetchJobs = async () => {
+      const response = await fetch(`/api/users/${params?.id}/jobs`);
       const data = await response.json();
 
-      setUserPosts(data);
+      setUserJobs(data);
     };
 
-    if (params?.id) fetchPosts();
+    if (params?.id) fetchJobs();
   }, [params.id]);
 
   return (
     <Profile
       name={userName}
-      desc={`Welcome to ${userName}'s personalized profile page. Explore ${userName}'s exceptional prompts and be inspired by the power of their imagination`}
-      data={userPosts}
+      desc={`Welcome to ${userName}'s personalized profile page. Explore ${userName}'s exceptional jobs and be inspired by the power of their imagination`}
+      data={userJobs}
     />
   );
 };
