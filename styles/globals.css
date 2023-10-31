@@ -160,6 +160,11 @@
  }
 
 
+ .btn-default{
+  @apply inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-input bg-transparent shadow-sm hover:bg-accent hover:text-accent-foreground h-9 px-4 py-2;
+ }
+
+
 html {
   --scrollbarBG: #CFD8DC;
   --thumbBG: #90A4AE;
@@ -366,7 +371,7 @@ body::-webkit-scrollbar-thumb {
   border-collapse: collapse;
   border-radius: 3px;
   border-style: hidden;
-  box-shadow: 0 0 0 0.5px #f6f7f8;
+  box-shadow: 0 0 0 2px #f6f7f8;
 }
 .job-card .actions > div {
   text-align: center;
@@ -554,6 +559,8 @@ body::-webkit-scrollbar-thumb {
     padding: 8px 18px;
   }
 }
+
+
 
 
 
