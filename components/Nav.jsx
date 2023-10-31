@@ -21,9 +21,9 @@ import {
   DropdownMenuSeparator,
   DropdownMenuShortcut,
   DropdownMenuTrigger,
-} from "@/registry/new-york/ui/dropdown-menu"
-import { Button } from "@/registry/new-york/ui/button"
-import { ThemeMenu } from "@/components/theme-menu"
+} from "@/registry/new-york/ui/dropdown-menu";
+import { Button } from "@/registry/new-york/ui/button";
+import { ThemeMenu } from "@/components/theme-menu";
 
 const Nav = () => {
   const { data: session } = useSession();
@@ -41,17 +41,15 @@ const Nav = () => {
   return (
     <nav className="flex-between flex w-full">
       <div className="relative flex">
-      
         {session?.user ? (
           <DropdownMenu>
-          <DropdownMenuTrigger asChild>
-          <motion.div
-                  initial={{ scale: 1 }}
-                  whileHover={{ scale: 1.1 }}
-                  className="profile-image"
-                >
-
-          <Image
+            <DropdownMenuTrigger asChild>
+              <motion.div
+                initial={{ scale: 1 }}
+                whileHover={{ scale: 1.1 }}
+                className="profile-image"
+              >
+                <Image
                   src={session?.user.image}
                   width={37}
                   height={37}
@@ -59,114 +57,101 @@ const Nav = () => {
                   alt="profile"
                   onHover={() => setToggleDropdown(!toggleDropdown)}
                 />
-                 </motion.div>
-          </DropdownMenuTrigger>
+              </motion.div>
+            </DropdownMenuTrigger>
 
-
-
-          <DropdownMenuContent className='h-[430px] w-[280px]' align='end'>
-        <div className='flex items-center justify-start gap-2 p-1'>
-          <div className='flex flex-col space-y-1 leading-none'>
-
-          <div className='flex gap-1 p-2'>
-            <div className='flex flex-col gap-1'>
-              {session?.user.name && <p className='font-medium'>{session?.user.name}</p>}
-              {session?.user.email && (
-                <p className='w-[200px] truncate text-sm text-muted-foreground'>
-                  {session?.user.email}
-                </p>
-              )}
+            <DropdownMenuContent className="h-[430px] w-[280px]" align="end">
+              <div className="flex items-center justify-start gap-2 p-1">
+                <div className="flex flex-col space-y-1 leading-none">
+                  <div className="flex gap-1 p-2">
+                    <div className="flex flex-col gap-1">
+                      {session?.user.name && (
+                        <p className="font-medium">{session?.user.name}</p>
+                      )}
+                      {session?.user.email && (
+                        <p className="w-[200px] truncate text-sm text-muted-foreground">
+                          {session?.user.email}
+                        </p>
+                      )}
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <DropdownMenuSeparator />
-        <DropdownMenuItem className="p-2" asChild>
-          <Link href='/'>
-      
-          Dashboard
-          <DropdownMenuShortcut>⌘D</DropdownMenuShortcut>
-          </Link>         
-        </DropdownMenuItem>
+              <DropdownMenuSeparator />
+              <DropdownMenuItem className="p-2" asChild>
+                <Link href="/">
+                  Dashboard
+                  <DropdownMenuShortcut>⌘D</DropdownMenuShortcut>
+                </Link>
+              </DropdownMenuItem>
 
-        <DropdownMenuItem className="p-2" asChild>
-          <Link href='create-job'>Create Job
-          <DropdownMenuShortcut>⌘C</DropdownMenuShortcut>
-          </Link>
-        </DropdownMenuItem>
-        
+              <DropdownMenuItem className="p-2" asChild>
+                <Link href="create-job">
+                  Create Job
+                  <DropdownMenuShortcut>⌘C</DropdownMenuShortcut>
+                </Link>
+              </DropdownMenuItem>
 
+              <DropdownMenuItem className="p-2" asChild>
+                <Link href="/forms">
+                  Profile Settings
+                  <DropdownMenuShortcut>⌘S</DropdownMenuShortcut>
+                </Link>
+              </DropdownMenuItem>
 
-        <DropdownMenuItem className="p-2" asChild>
-          <Link href='/Help'>Command Menu
-          <DropdownMenuShortcut className="flex gap-1 rounded-sm border">  Ctrl K</DropdownMenuShortcut>
-          </Link>
-        </DropdownMenuItem> 
-       
-        <DropdownMenuItem className="p-2" asChild>
-          <Link href='/FAQ'>FAQ
-          <DropdownMenuShortcut>⌘F</DropdownMenuShortcut>
-          </Link>
-        </DropdownMenuItem> 
-       
-      
-        <DropdownMenuItem className="p-2" asChild>
-          <Link href='/forms'>Profile Settings
-          <DropdownMenuShortcut>⌘S</DropdownMenuShortcut>
-          </Link>
-        </DropdownMenuItem> 
-       
+              <DropdownMenuItem className="p-2" asChild>
+                <Link href="/FAQ">
+                  FAQ
+                  <DropdownMenuShortcut>⌘F</DropdownMenuShortcut>
+                </Link>
+              </DropdownMenuItem>
 
-          <ThemeMenu />
-        <DropdownMenuSeparator />
+              <ThemeMenu />
+              <DropdownMenuSeparator />
 
-
-
-        <DropdownMenuItem
-          className='cursor-pointer p-2'
-          onClick={() => {
-            setToggleDropdown(false);
-            signOut();
-          }}>
-          Sign out
-          <DropdownMenuShortcut>⌘S</DropdownMenuShortcut>
-        </DropdownMenuItem>
-        <DropdownMenuSeparator />
-        <div className="mt-2">
-          <Link href='/Pricing'  target='_blank' className="btn-primary m-auto h-8 w-full text-center">
-            Upgrade to Pro
-          </Link>
-
-        </div>
-
-      </DropdownMenuContent>
-
-
-
-         
-        </DropdownMenu>
-        
+              <DropdownMenuItem
+                className="cursor-pointer p-2"
+                onClick={() => {
+                  setToggleDropdown(false);
+                  signOut();
+                }}
+              >
+                Sign out
+                <DropdownMenuShortcut>⌘S</DropdownMenuShortcut>
+              </DropdownMenuItem>
+              <DropdownMenuSeparator />
+              <div className="mt-2">
+                <Link
+                  href="/Pricing"
+                  target="_blank"
+                  className="btn-primary m-auto h-8 w-full text-center"
+                >
+                  Upgrade to Pro
+                </Link>
+              </div>
+            </DropdownMenuContent>
+          </DropdownMenu>
         ) : (
           <>
             <motion.div
-                  className="profile-info"
-                  initial={{ opacity: 0, y: -20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                >
-            {providers &&
-              Object.values(providers).map((provider) => (
-                <button
-                  type="button"
-                  key={provider.name}
-                  onClick={() => {
-                    signIn(provider.id);
-                  }}
-                  className="btn-primary"
-                >
-                  Sign in
-                </button>
-              ))}
-              </motion.div> 
+              className="profile-info"
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+            >
+              {providers &&
+                Object.values(providers).map((provider) => (
+                  <button
+                    type="button"
+                    key={provider.name}
+                    onClick={() => {
+                      signIn(provider.id);
+                    }}
+                    className="btn-primary"
+                  >
+                    Sign in
+                  </button>
+                ))}
+            </motion.div>
           </>
         )}
       </div>

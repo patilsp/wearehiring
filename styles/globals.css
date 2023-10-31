@@ -216,8 +216,19 @@ body::-webkit-scrollbar-thumb {
   border-radius: 5px;
   padding: 1px 10px;
 }
-
-
+.toggle-icon{
+  width: 60px;
+  /* height: 55px; */
+  border: 3px solid #d29de7;
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.1rem #fff, 0 0 1rem #bc13fe, 0 0 0.4rem #bc13fe, 0 0 1.8rem #bc13fe, inset 0 0 1.3rem #bc13fe;
+}
+.fill-current{
+  color: #b573f8;
+}
 .text_primary {
   background: linear-gradient(30deg,#4ca5ff,#b573f8);
   -webkit-background-clip: text;
@@ -228,7 +239,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .heading{
-  background: linear-gradient(30deg,#4ca5ff,#b573f8);
+  background: linear-gradient(30deg,#4ca5ff,#AF40FF);
   -webkit-background-clip: text;
   background-clip: text !important;
   -webkit-text-fill-color: transparent;
@@ -242,7 +253,7 @@ body::-webkit-scrollbar-thumb {
 
 
 .welcome-card:hover h3{
-  background: linear-gradient(30deg,#4ca5ff,#b573f8);
+  background: linear-gradient(30deg,#4ca5ff,#AF40FF);
   -webkit-background-clip: text;
   background-clip: text !important;
   -webkit-text-fill-color: transparent;
@@ -269,7 +280,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .hero-heading {
-  width: 100%;
   text-align: left;
   text-transform: uppercase;
   -webkit-text-fill-color: transparent;
@@ -282,7 +292,6 @@ body::-webkit-scrollbar-thumb {
   padding-right: 0;
   font-family: Inter,sans-serif;
   font-weight: 900;
-  line-height: 57px;
 }
 
 .job-card {
@@ -545,4 +554,6 @@ body::-webkit-scrollbar-thumb {
     padding: 8px 18px;
   }
 }
+
+
 
