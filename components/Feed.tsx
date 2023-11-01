@@ -7,7 +7,7 @@ import { motion } from "framer-motion"
 
 const PromptCardList = ({ data, handleTagClick }) => {
   return (
-    <div className='mt-12 prompt_layout'>
+    <div className='mt-12'>
       {data.map((post) => (
         <PromptCard
           key={post._id}

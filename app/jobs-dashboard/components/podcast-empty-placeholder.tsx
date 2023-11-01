@@ -30,31 +30,31 @@ export function PodcastEmptyPlaceholder() {
           <path d="M17 18.5a9 9 0 1 0-10 0" />
         </svg>
 
-        <h3 className="mt-4 text-lg font-semibold">No episodes added</h3>
+        <h3 className="mt-4 text-lg font-semibold">No jobs added</h3>
         <p className="mb-4 mt-2 text-sm text-muted-foreground">
-          You have not added any podcasts. Add one below.
+          You have not added any jobs. Add one below.
         </p>
         <Dialog>
           <DialogTrigger>
             <Button size="sm" className="relative">
-              Add Podcast
+              Add Job
             </Button>
           </DialogTrigger>
           <DialogContent>
             <DialogHeader>
-              <DialogTitle>Add Podcast</DialogTitle>
+              <DialogTitle>Add Job</DialogTitle>
               <DialogDescription>
-                Copy and paste the podcast feed URL to import.
+                Copy and paste the Job feed URL to import.
               </DialogDescription>
             </DialogHeader>
             <div className="grid gap-4 py-4">
               <div className="grid gap-2">
-                <Label htmlFor="url">Podcast URL</Label>
+                <Label htmlFor="url">Job URL</Label>
                 <Input id="url" placeholder="https://example.com/feed.xml" />
               </div>
             </div>
             <DialogFooter>
-              <Button>Import Podcast</Button>
+              <Button>Import Job</Button>
             </DialogFooter>
           </DialogContent>
         </Dialog>

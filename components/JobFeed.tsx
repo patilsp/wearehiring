@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-
+import { ScrollArea } from "@/registry/new-york/ui/scroll-area"
 import JobCard from "./JobCard";
 
 const JobCardList = ({ data, handleTagClick }) => {
@@ -68,17 +68,22 @@ const JobFeed = () => {
   };
 
   return (
-    <section className='feed '>
-      <form className='relative mb-2 flex w-full justify-end md:top-[-50px]'>
-        <input
-          type='text'
-          placeholder='Search for a title or a location'
-          value={searchText}
-          onChange={handleSearchChange}
-          required
-          className='search_input peer'
-        />
-      </form>
+    <section className='feed p-2'>
+      <ScrollArea className="mb-2 h-[600px]">
+      <div className="banner mb-2 w-full rounded-2xl bg-sky-600 p-10 shadow">
+        <h1 className="font-heading mb-1 inline-block text-2xl text-white lg:text-5xl">Find your dream job here!</h1>
+        <p className="mb-3 text-xl text-slate-200">Explore the latest job openings and apply for the best job opportunities available today! </p>
+        <form className='relative mb-2 flex w-full justify-center'>
+          <input
+            type='text'
+            placeholder='Search for a title or a location'
+            value={searchText}
+            onChange={handleSearchChange}
+            required
+            className='search_input peer bg-white p-2'
+          />
+        </form>
+      </div>
 
       {/* All Prompts */}
       {searchText ? (
@@ -89,6 +94,7 @@ const JobFeed = () => {
       ) : (
         <JobCardList data={allJobs} handleTagClick={handleTagClick} />
       )}
+      </ScrollArea>
     </section>
   );
 };

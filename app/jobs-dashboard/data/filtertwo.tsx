@@ -68,7 +68,7 @@ export function FilterTwo() {
       </div>
       {/* <h2 className="m-2 font-bold"> Work Experience </h2> */}
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 p-2 mt-2">
+        <form onSubmit={form.handleSubmit(onSubmit)} className="mt-2 space-y-8 p-2">
           <FormField
             control={form.control}
             name="items"

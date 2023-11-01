@@ -17,7 +17,7 @@ export function SiteHeader() {
           <MobileNav />           
           <div className="flex w-full items-center justify-between">
             <MainNav />              
-            <div className="w-full sm:flex md:hidden md:w-auto md:justify-end mr-2">
+            <div className="mr-2 w-full sm:flex md:hidden md:w-auto md:justify-end">
               <CommandMenu />
             </div>
              <div className="flex md:w-auto md:justify-end">

@@ -38,6 +38,7 @@
     "date-fns": "^2.30.0",
     "faker": "^5.5.3",
     "framer-motion": "^10.12.16",
+    "geist": "^1.0.0",
     "gsap": "^3.12.2",
     "jotai": "^2.3.1",
     "lottie-react": "^2.4.0",

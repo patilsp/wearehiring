@@ -20,52 +20,42 @@ import { Sidebar } from "./components/sidebar"
 import { listenNowAlbums, madeForYouAlbums } from "./data/albums"
 import { playlists } from "./data/playlists"
 import JobFeeds from "@/components/JobFeed"
+import { DemoGithub } from "@/components/github-card"
+
 export default function MusicPage() {
   return (
     <>   
       <div className="md:block">
         {/* <Menu /> */}
-        <div className="">
-          <div className="border-t bg-background">
+        <div className="bg-slate-100 p-2 ">
+          <div className="sidebar-right flex w-full justify-between gap-10 rounded-md border-t bg-background">
             <div className="grid lg:grid-cols-5">
               <Sidebar playlists={playlists} className="hidden lg:block" />
-              <div className="container col-span-3 mt-4 lg:col-span-4">
+              <div className="container col-span-3 mt-4 pr-0  lg:col-span-4">
                 <div className="h-full px-2">
                   <Tabs defaultValue="music" className="h-full space-y-6">
                     <div className="space-between flex items-center">
-                      <TabsList className="gap-2">
-                        <TabsTrigger value="music" className="relative px-10">
+                      <TabsList className="ml-1 gap-2">
+                        <TabsTrigger value="music" className="relative px-12">
                           New
                         </TabsTrigger>
-                        <TabsTrigger value="podcasts2" className="px-10">Treading</TabsTrigger>
-                        <TabsTrigger value="live" className="px-10">
+                        <TabsTrigger value="podcasts" className="px-12">Treading</TabsTrigger>
+                        <TabsTrigger value="live" className="px-12">
                           Saved
-
+                        </TabsTrigger>
+                        <TabsTrigger value="live" className="px-12">
+                          Applied
+                        </TabsTrigger>
+                        <TabsTrigger value="live" className="px-12">
+                          Viewed
                         </TabsTrigger>
                       </TabsList>
-                      <div className="ml-auto hidden md:block">
-                        <Link href="create-job">
-                        <Button>
-                          <PlusCircledIcon className="mr-2 h-4 w-4" />
-                           Add New
-                        </Button>
-                        </Link>
-                      </div>
                     </div>
                     <TabsContent
                       value="music"
                       className="border-none p-0 outline-none"
                     >
-                      <div className="flex items-center justify-between">
-                        <div className="hidden space-y-1 md:block">
-                          <h2 className="blue_gradient text-2xl font-semibold tracking-tight">
-                            Recommended Jobs
-                          </h2>
-                          <p className="text-sm text-muted-foreground">
-                            Top picks for you. Updated daily.
-                          </p>
-                        </div>
-                      </div>
+                     
                      <JobFeeds />
                     </TabsContent>
                     <TabsContent
@@ -75,10 +65,10 @@ export default function MusicPage() {
                       <div className="flex items-center justify-between">
                         <div className="space-y-1">
                           <h2 className="text-2xl font-semibold tracking-tight">
-                            New Episodes
+                            New Jobs
                           </h2>
                           <p className="text-sm text-muted-foreground">
-                            Your favorite podcasts. Updated daily.
+                            Your favorite jobs. Updated daily.
                           </p>
                         </div>
                       </div>
@@ -88,7 +78,21 @@ export default function MusicPage() {
                   </Tabs>
                 </div>
               </div>
+              
             </div>
+            <div className="sidebar_right sidebar-right  mt-2 h-full max-w-xs">
+                <div className="mb-4 rounded-md border bg-card text-card-foreground shadow">
+                        <h1 className="p-1 text-xl font-bold"> Suggested Jobs </h1>  
+                    </div>
+                <div className="mb-10 flex flex-col items-center justify-center gap-4 [&>div]:w-full">
+                  
+                        <DemoGithub />                  
+                        <DemoGithub />
+                        <DemoGithub />
+                        <DemoGithub />
+                  
+                  </div>
+              </div>
           </div>
         </div>
       </div>
