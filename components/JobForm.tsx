@@ -26,12 +26,12 @@ const JobForm = ({ type, job, setJob, submitting, handleSubmit }) => {
   return (
     <section className="m-auto flex max-w-4xl flex-col items-center justify-center p-10">
       <h1 className="hero-heading text-center text-4xl font-bold">{type} Job</h1>
-      <p className="desc max-w-2xl text-center">
+      {/* <p className="desc max-w-2xl text-center">
         {type} and share all the details of the job with the world, and let your imagination run wild with any AI-powered platform
-      </p>
+      </p> */}
 
-      <form onSubmit={handleSubmit} className="mt-10 grid w-full grid-cols-1 gap-5 md:grid-cols-2">
-        <div>
+      <form onSubmit={handleSubmit} className="mt-10 flex w-full max-w-2xl flex-col gap-2">
+        <div className="w-full">
           <Label htmlFor="title">Job Title</Label>
           <Input
             value={job.job_title}
@@ -42,7 +42,18 @@ const JobForm = ({ type, job, setJob, submitting, handleSubmit }) => {
           />
         </div>
 
-        <div>
+        <div className="w-full">
+          <Label htmlFor="title">Link to apply</Label>
+          <Input
+            value={job.link}
+            onChange={(e) => setJob({ ...job, link: e.target.value })}
+            placeholder="Link to apply"
+            required
+            className="input"
+          />
+        </div>
+
+        <div className="w-full">
           <Label htmlFor="name">Company</Label>
           <Input
             value={job.company_name}
@@ -52,8 +63,18 @@ const JobForm = ({ type, job, setJob, submitting, handleSubmit }) => {
             className="input"
           />
         </div>
+        <div className="w-full">
+          <Label htmlFor="title">Company Website</Label>
+          <Input
+            value={job.link}
+            onChange={(e) => setJob({ ...job, link: e.target.value })}
+            placeholder="Link to apply"
+            required
+            className="input"
+          />
+        </div>
 
-        <div>
+        <div className="w-full">
           <Label htmlFor="title">Job Location</Label>
           <Input
             value={job.location}
@@ -65,7 +86,7 @@ const JobForm = ({ type, job, setJob, submitting, handleSubmit }) => {
         </div>
 
 
-        <div>
+        <div className="w-full">
           <Label htmlFor="Salary">Salary</Label>
           <Input
             value={job.salary}
@@ -76,7 +97,7 @@ const JobForm = ({ type, job, setJob, submitting, handleSubmit }) => {
           />
         </div>
 
-        <div>
+        <div className="w-full">
           <Label htmlFor="date">Created Date</Label>
           <Input
             value={job.createddate}
@@ -89,7 +110,7 @@ const JobForm = ({ type, job, setJob, submitting, handleSubmit }) => {
 
     
 
-        <div>
+        <div className="w-full">
           <Label htmlFor="job_type">Job Type</Label>
           <Select>
             <SelectTrigger
@@ -107,7 +128,7 @@ const JobForm = ({ type, job, setJob, submitting, handleSubmit }) => {
           </Select>
         </div>
 
-        <div>
+        <div className="w-full">
           <Label htmlFor="status">Status</Label>
           <Select>
             <SelectTrigger
@@ -124,7 +145,7 @@ const JobForm = ({ type, job, setJob, submitting, handleSubmit }) => {
           </Select>
         </div>
         
-        <div>
+        <div className="w-full">
           <Label htmlFor="status">Location</Label>
           <Select>
             <SelectTrigger

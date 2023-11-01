@@ -35,18 +35,18 @@ export default function MusicPage() {
                 <div className="h-full px-2">
                   <Tabs defaultValue="music" className="h-full space-y-6">
                     <div className="space-between flex items-center">
-                      <TabsList className="ml-1 gap-2">
-                        <TabsTrigger value="music" className="relative px-12">
+                      <TabsList className="ml-2 gap-2">
+                        <TabsTrigger value="music" className="relative px-11">
                           New
                         </TabsTrigger>
-                        <TabsTrigger value="podcasts" className="px-12">Treading</TabsTrigger>
-                        <TabsTrigger value="live" className="px-12">
+                        <TabsTrigger value="podcasts" className="px-11">Treading</TabsTrigger>
+                        <TabsTrigger value="live" className="px-11">
                           Saved
                         </TabsTrigger>
-                        <TabsTrigger value="live" className="px-12">
+                        <TabsTrigger value="live" className="px-11">
                           Applied
                         </TabsTrigger>
-                        <TabsTrigger value="live" className="px-12">
+                        <TabsTrigger value="live" className="px-11">
                           Viewed
                         </TabsTrigger>
                       </TabsList>
