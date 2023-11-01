@@ -45,13 +45,7 @@ export function UserAuthForm({ className, ...props }: UserAuthFormProps) {
     })();
   }, []);
 
- 
-  
-  // const handleSignIn = async (providerId) => {
-  //   const result = await signIn(providerId, { callbackUrl: '/user-dashboard' });
-  
-  // };
-  
+
 
 
   return (
@@ -85,16 +79,16 @@ export function UserAuthForm({ className, ...props }: UserAuthFormProps) {
           <span className="w-full border-t" />
         </div>
         <div className="relative flex justify-center text-xs uppercase">
-          <span className="bg-white rounded-sm px-2 text-muted-foreground">
+          <span className="rounded-sm bg-white px-2 text-muted-foreground">
             Or continue with
           </span>
         </div>
       </div>
 
-      <div className='flex relative'>
+      <div className='relative flex'>
         {session?.user ? (
           <div className='flex'>
-              {router.push('/user-dashboard')}
+              {router.push('/jobs-dashboard')}
           </div>
         ) : (
           <>
@@ -117,17 +111,6 @@ export function UserAuthForm({ className, ...props }: UserAuthFormProps) {
                   )}{" "}
                   Google
                 </Button>
-
-
-                // <Button
-                //   type='button'
-                //   key={provider.name}
-                //   onClick={() => {
-                //     signIn(provider.id);
-                //   }}
-                //   className='black_btn'>
-                //   Sign in
-                // </Button>
               ))}
           </>
         )}

@@ -43,7 +43,7 @@ const UpdateJob = () => {
       });
 
       if (response.ok) {
-        router.push("/");
+        router.push("/jobs-dashboard");
       }
     } catch (error) {
       console.log(error);

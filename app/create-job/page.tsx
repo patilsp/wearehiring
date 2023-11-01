@@ -30,7 +30,7 @@ const CreateJob = () => {
   const { data: session } = useSession();
   const router = useRouter();
   const [submitting, setIsSubmitting] = useState(false);
-  const [post, setPost] = useState({ company_name:"", job_title: "", description:"", salary: "", status:"", createddate:"", job_type:"" });
+  const [job, setJob] = useState({ company_name:"", job_title: "", description:"", salary: "", status:"", createddate:"", job_type:"" });
 
   const createJob= async (e) => {
     e.preventDefault();
@@ -38,15 +38,15 @@ const CreateJob = () => {
 
     try {
       const response = await fetch("/api/job/new", {
-        method: "POST",
+        method: "job",
         body: JSON.stringify({
-          company_name: post.company_name,
-          job_title: post.job_title,
-          description: post.description,
-          salary: post.salary,
-          status:post.status,
-          createddate: post.createddate,      
-          job_type:post.job_type,
+          company_name: job.company_name,
+          job_title: job.job_title,
+          description: job.description,
+          salary: job.salary,
+          status:job.status,
+          createddate: job.createddate,      
+          job_type:job.job_type,
           userId: session?.user.id,
           
         }),
@@ -67,8 +67,8 @@ const CreateJob = () => {
   return (
     <JobForm
       type='Create'
-      post={post}
-      setPost={setPost}
+      job={job}
+      setJob={setJob}
       submitting={submitting}
       handleSubmit={createJob}
     />

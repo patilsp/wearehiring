@@ -10,6 +10,7 @@ import { cn } from "@/lib/utils";
 import { Icons } from "@/components/icons";
 import { MainNav } from "@/components/main-nav";
 import { MobileNav } from "@/components/mobile-nav";
+import { useHistory } from 'react-router-dom';
 
 import {
   DropdownMenu,
@@ -121,8 +122,9 @@ const Nav = () => {
                 onClick={() => {
                   setToggleDropdown(false);
                   signOut();
+                  push('/login');
                 }}
-              >
+               >
                 Sign out
                 <DropdownMenuShortcut>⌘S</DropdownMenuShortcut>
               </DropdownMenuItem>
