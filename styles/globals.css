@@ -240,7 +240,7 @@ body::-webkit-scrollbar-thumb {
 
 .mobile_nav a {
   text-decoration: none;
-  color: #1E1E23;
+  /* color: #1E1E23; */
   opacity: 1;
   font-size: 1.5rem;
   font-weight: 600;

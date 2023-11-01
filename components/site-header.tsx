@@ -16,7 +16,7 @@ export function SiteHeader() {
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="flex h-14 w-full items-center justify-between gap-1 px-4 "> 
           <MobileNav /> 
-          <Link href="/" className="mr-6 flex items-center space-x-2">
+          <Link href="/" className="mr-6 hidden items-center space-x-2 md:flex">
             <Image 
               src="/images/logo.png"
               height="50"
