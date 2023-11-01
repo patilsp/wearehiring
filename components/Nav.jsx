@@ -10,7 +10,6 @@ import { cn } from "@/lib/utils";
 import { Icons } from "@/components/icons";
 import { MainNav } from "@/components/main-nav";
 import { MobileNav } from "@/components/mobile-nav";
-import { useHistory } from 'react-router-dom';
 
 import {
   DropdownMenu,

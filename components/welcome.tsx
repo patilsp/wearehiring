@@ -103,10 +103,10 @@ export default function Home() {
 
             <div className="item-center m-auto flex max-w-[85%] flex-row justify-center">
               <div className="slider">
-                <div className="slide-track flex">
+                {/* <div className="slide-track flex">
                   <div className="slide">
                     <Image
-                      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png"
+                      src="/images/github.png"
                       height="100"
                       width="250"
                       alt="image"
@@ -114,7 +114,7 @@ export default function Home() {
                   </div>
                   <div className="slide">
                     <Image
-                      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png"
+                      src="/images/github.png"
                       height="100"
                       width="250"
                       alt="image"
@@ -122,7 +122,7 @@ export default function Home() {
                   </div>
                   <div className="slide">
                     <Image
-                      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png"
+                      src="/images/github.png"
                       height="100"
                       width="250"
                       alt="image"
@@ -130,7 +130,7 @@ export default function Home() {
                   </div>
                   <div className="slide">
                     <Image
-                      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png"
+                      src="/images/github.png"
                       height="100"
                       width="250"
                       alt="image"
@@ -138,7 +138,7 @@ export default function Home() {
                   </div>
                   <div className="slide">
                     <Image
-                      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png"
+                      src="/images/github.png"
                       height="100"
                       width="250"
                       alt="image"
@@ -146,7 +146,7 @@ export default function Home() {
                   </div>
                   <div className="slide">
                     <Image
-                      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png"
+                      src="/images/github.png"
                       height="100"
                       width="250"
                       alt="image"
@@ -154,13 +154,13 @@ export default function Home() {
                   </div>
                   <div className="slide">
                     <Image
-                      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png"
+                      src="/images/github.png"
                       height="100"
                       width="250"
                       alt="image"
                     />
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </motion.div>
