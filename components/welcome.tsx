@@ -94,9 +94,9 @@ export default function Home() {
             </div>
 
             <div className="mb-4 flex w-full justify-center">
-              <h2 className="heading font-heading text-3xl font-bold leading-[1.1] sm:text-3xl md:text-6xl">
+              {/* <h2 className="heading font-heading text-3xl font-bold leading-[1.1] sm:text-3xl md:text-6xl">
                 Meet our global customers
-              </h2>
+              </h2> */}
               {/* <p> Trusted by 2000+ users worldwide </p> */}
             </div>
             

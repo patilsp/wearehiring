@@ -15,15 +15,8 @@ export function MainNav() {
 
   return (
     <div className="mr-4 hidden md:flex">
-      <Link href="/" className="mr-6 flex items-center space-x-2">
-        <Image 
-          src="/images/logo.png"
-          height="50"
-          width="50"
-          alt="logo"
-         />
-      </Link>
-      <nav className="nav-link flex items-center space-x-6 text-sm font-bold">
+     
+      <nav className="nav-link flex items-center space-x-6 rounded-3xl border px-4 py-2 text-sm font-bold">
         <Link
           href="/"
           className={cn(
