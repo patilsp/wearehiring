@@ -7,7 +7,6 @@ import { signIn, signOut, useSession, getProviders } from "next-auth/react";
 import { motion } from "framer-motion";
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
-import { CommandMenu } from "@/components/command-menu";
 import { Icons } from "@/components/icons";
 import { MainNav } from "@/components/main-nav";
 import { MobileNav } from "@/components/mobile-nav";
@@ -47,7 +46,7 @@ const Nav = () => {
               <motion.div
                 initial={{ scale: 1 }}
                 whileHover={{ scale: 1.1 }}
-                className="profile-image"
+                className="profile-image cursor-pointer"
               >
                 <Image
                   src={session?.user.image}
@@ -105,6 +104,14 @@ const Nav = () => {
                   <DropdownMenuShortcut>⌘F</DropdownMenuShortcut>
                 </Link>
               </DropdownMenuItem>
+             
+              <DropdownMenuItem className="p-2" asChild>
+                <Link href="/">
+                  Command Menu
+                  <DropdownMenuShortcut>⌘K</DropdownMenuShortcut>
+                </Link>
+              </DropdownMenuItem>
+              
 
               <ThemeMenu />
               <DropdownMenuSeparator />

@@ -15,14 +15,14 @@ export function SiteHeader() {
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="flex h-14 w-full items-center justify-between gap-1 px-4 "> 
           <MobileNav />           
-          <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
+          <div className="flex w-full items-center justify-between">
             <MainNav />              
-            <div className="w-full flex-1 sm:flex md:w-auto md:justify-end">
+            <div className="w-full sm:flex md:hidden md:w-auto md:justify-end mr-2">
               <CommandMenu />
             </div>
-            <nav className="flex items-center gap-2">
-              <Nav />
-            </nav>
+             <div className="flex md:w-auto md:justify-end">
+                <Nav />
+              </div>
           </div>
         </div>      
       </header>

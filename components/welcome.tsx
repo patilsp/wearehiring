@@ -64,17 +64,17 @@ export default function Home() {
                   <div className="grid w-full justify-center">
                     <HireToggle />
 
-                    <p className="mt-2 max-w-5xl text-center text-lg leading-6 text-slate-600">
+                    <p className="mt-2 max-w-2xl text-center text-base font-medium leading-normal text-muted-foreground md:text-xl">
                       Find a developer for live mentorship & freelance projects
                     </p>
                   </div>
                   
                   <div className="text-center">
-                    <h1 className="heading font-display mt-12 block max-w-5xl text-3xl font-bold tracking-tight text-neutral-950 [text-wrap:balance] dark:text-white sm:text-center md:text-4xl">
+                    <h1 className="heading font-heading text-3xl sm:text-5xl md:text-6xl lg:text-7xl">
                       Transforming job  search  experience.
                     </h1>
            
-                    <p className="mt-2 text-lg leading-6 text-slate-600">                      
+                    <p className="mt-2 max-w-2xl text-center text-base font-medium leading-normal text-muted-foreground md:text-xl">                      
 
                       Connect with the worlds best independent professionals. Join the top tech startups in the industry.
                     </p>
@@ -95,9 +95,12 @@ export default function Home() {
 
             <div className="mb-4 flex w-full justify-center">
               <h2 className="heading font-heading text-3xl font-bold leading-[1.1] sm:text-3xl md:text-6xl">
-                Our Partners
+                Meet our global customers
               </h2>
+              {/* <p> Trusted by 2000+ users worldwide </p> */}
             </div>
+            
+
             <div className="item-center m-auto flex max-w-[85%] flex-row justify-center">
               <div className="slider">
                 <div className="slide-track flex">

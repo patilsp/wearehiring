@@ -22,7 +22,7 @@ import {
 } from "@/registry/new-york/ui/select";
 import { Textarea } from "@/registry/new-york/ui/textarea";
 
-const JobForm = ({ type, post, setPost, submitting, handleSubmit }) => {
+const JobForm = ({ type, job, setJob, submitting, handleSubmit }) => {
   return (
     <section className="m-auto flex max-w-4xl flex-col items-center justify-center p-10">
       <h1 className="hero-heading text-center text-4xl font-bold">{type} Job</h1>
@@ -34,8 +34,8 @@ const JobForm = ({ type, post, setPost, submitting, handleSubmit }) => {
         <div>
           <Label htmlFor="title">Job Title</Label>
           <Input
-            value={post.job_title}
-            onChange={(e) => setPost({ ...post, job_title: e.target.value })}
+            value={job.job_title}
+            onChange={(e) => setJob({ ...job, job_title: e.target.value })}
             placeholder="Enter job title"
             required
             className="input"
@@ -45,8 +45,8 @@ const JobForm = ({ type, post, setPost, submitting, handleSubmit }) => {
         <div>
           <Label htmlFor="name">Company</Label>
           <Input
-            value={post.company_name}
-            onChange={(e) => setPost({ ...post, company_name: e.target.value })}
+            value={job.company_name}
+            onChange={(e) => setJob({ ...job, company_name: e.target.value })}
             placeholder="Enter Company Name"
             required
             className="input"
@@ -56,8 +56,8 @@ const JobForm = ({ type, post, setPost, submitting, handleSubmit }) => {
         <div>
           <Label htmlFor="title">Job Location</Label>
           <Input
-            value={post.location}
-            onChange={(e) => setPost({ ...post, location: e.target.value })}
+            value={job.location}
+            onChange={(e) => setJob({ ...job, location: e.target.value })}
             placeholder="Enter job location"
             required
             className="input"
@@ -68,8 +68,8 @@ const JobForm = ({ type, post, setPost, submitting, handleSubmit }) => {
         <div>
           <Label htmlFor="Salary">Salary</Label>
           <Input
-            value={post.salary}
-            onChange={(e) => setPost({ ...post, salary: e.target.value })}
+            value={job.salary}
+            onChange={(e) => setJob({ ...job, salary: e.target.value })}
             placeholder="Enter salary"
             required
             className="input"
@@ -79,8 +79,8 @@ const JobForm = ({ type, post, setPost, submitting, handleSubmit }) => {
         <div>
           <Label htmlFor="date">Created Date</Label>
           <Input
-            value={post.createddate}
-            onChange={(e) => setPost({ ...post, createddate: e.target.value })}
+            value={job.createddate}
+            onChange={(e) => setJob({ ...job, createddate: e.target.value })}
             placeholder="Enter Created Date"
             required
             className="input"
@@ -93,8 +93,8 @@ const JobForm = ({ type, post, setPost, submitting, handleSubmit }) => {
           <Label htmlFor="job_type">Job Type</Label>
           <Select>
             <SelectTrigger
-              value={post.job_type}
-              onChange={(e) => setPost({ ...post, job_type: e.target.value })}
+              value={job.job_type}
+              onChange={(e) => setJob({ ...job, job_type: e.target.value })}
               className="line-clamp-1 truncate"
             >
               <SelectValue placeholder="Select Job Type" />
@@ -111,8 +111,8 @@ const JobForm = ({ type, post, setPost, submitting, handleSubmit }) => {
           <Label htmlFor="status">Status</Label>
           <Select>
             <SelectTrigger
-              value={post.status}
-              onChange={(e) => setPost({ ...post, status: e.target.value })}
+              value={job.status}
+              onChange={(e) => setJob({ ...job, status: e.target.value })}
               className="line-clamp-1 truncate"
             >
               <SelectValue placeholder="Select Status" />
@@ -128,8 +128,8 @@ const JobForm = ({ type, post, setPost, submitting, handleSubmit }) => {
           <Label htmlFor="status">Location</Label>
           <Select>
             <SelectTrigger
-              value={post.location}
-              onChange={(e) => setPost({ ...post, location: e.target.value })}
+              value={job.location}
+              onChange={(e) => setJob({ ...job, location: e.target.value })}
               className="line-clamp-1 truncate"
             >
               <SelectValue placeholder="Select location" />
@@ -144,8 +144,8 @@ const JobForm = ({ type, post, setPost, submitting, handleSubmit }) => {
         <div className="w-full">
           <Label htmlFor="description">Job Description</Label>
           <Textarea
-            value={post.description}
-            onChange={(e) => setPost({ ...post, description: e.target.value })}
+            value={job.description}
+            onChange={(e) => setJob({ ...job, description: e.target.value })}
             placeholder="Enter job description"
             required
             className="form_textarea"
