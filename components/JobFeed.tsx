@@ -68,8 +68,8 @@ const JobFeed = () => {
   };
 
   return (
-    <section className='feed p-2'>
-      <ScrollArea className="mb-2 h-[600px]">
+    <section className='feeds p-2'>
+
       <div className="banner mb-2 w-full rounded-2xl bg-sky-600 p-10 shadow">
         <h1 className="font-heading mb-1 inline-block text-2xl text-white lg:text-5xl">Find your dream job here!</h1>
         <p className="mb-3 text-xl text-slate-200">Explore the latest job openings and apply for the best job opportunities available today! </p>
@@ -94,7 +94,7 @@ const JobFeed = () => {
       ) : (
         <JobCardList data={allJobs} handleTagClick={handleTagClick} />
       )}
-      </ScrollArea>
+   
     </section>
   );
 };

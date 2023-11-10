@@ -53,7 +53,7 @@ const CreateJob = () => {
       });
 
       if (response.ok) {
-        router.push("/jobs-dashboard");
+        router.push("/user-dashboard");
         toast.success("Job has been created! 🔥");
       }
       

@@ -2,15 +2,11 @@ import "@/styles/main.css"
 import React from 'react' 
 import { myFunction } from '@/components/myJavaScriptFile.js'
 import { FaUserFriends } from "react-icons/fa" 
-
-import JobFeeds from "@/components/JobFeed"
-
-
 const Page = () => { return (
     <div>
         <div className="job">
             <div className="wrapper">
-                <div className="search-menu border">
+                <div className="search-menu">
                     <div className="search-bar">
                         <input type="text" className="search-box" autofocus />
                         <div className="search item">
@@ -36,16 +32,16 @@ const Page = () => { return (
                     </div>
                     <button className="search-button">Find Job</button>
                 </div>
-                <div className="main-container ">
-                    <div className="search-type ">
-                        <div className="alert bg-blue-400">
+                <div className="main-container">
+                    <div className="search-type">
+                        <div className="alert">
                             <div className="alert-title">Create Job Alert</div>
-                            <div className="alert-subtitle text-zinc-600">Create a job alert now and never miss a job</div>
+                            <div className="alert-subtitle">Create a job alert now and never miss a job</div>
                             <input type="text" placeholder="Enter job keyword" />
                             <button className="search-buttons">Create Job Alerts</button>
                         </div>
                         <div className="job-time">
-                            <div className="job-time-title font-semibold text-zinc-600">Type of Employment</div>
+                            <div className="job-time-title">Type of Employment</div>
                             <div className="job-wrapper">
                                 <div className="type-container">
                                     <input type="checkbox" id="job1" className="job-style" checked />
@@ -161,7 +157,177 @@ const Page = () => { return (
                             <div className="searched-sort">Sort by: <span className="post-time">Newest Post </span><span className="menu-icon">▼</span></div>
                         </div>
                         <div className="job-cards">
-                          <JobFeeds />
+                            <div className="job-card">
+                                <div className="job-card-header">
+                                    <FaUserFriends className="h-4 w-4" />
+                                    <div className="menu-dot"></div>
+                                </div>
+                                <div className="job-card-title">UI / UX Designer</div>
+                                <div className="job-card-subtitle">
+                                    The User Experience Designer position exists to create compelling and digital user experience through excellent design...
+                                </div>
+                                <div className="job-detail-buttons">
+                                    <button className="search-buttons detail-button">Full Time</button>
+                                    <button className="search-buttons detail-button">Min. 1 Year</button>
+                                    <button className="search-buttons detail-button">Senior Level</button>
+                                </div>
+                                <div className="job-card-buttons">
+                                    <button className="search-buttons card-buttons">Apply Now</button>
+                                    <button className="search-buttons card-buttons-msg">Messages</button>
+                                </div>
+                            </div>
+                            <div className="job-card">
+                                <div className="job-card-header">
+                                    <FaUserFriends className="h-4 w-4" />
+                                    <div className="menu-dot"></div>
+                                </div>
+                                <div className="job-card-title">Sr. Product Designer</div>
+                                <div className="job-card-subtitle">
+                                    The User Experience Designer position exists to create compelling and digital user experience through excellent design...
+                                </div>
+                                <div className="job-detail-buttons">
+                                    <button className="search-buttons detail-button">Full Time</button>
+                                    <button className="search-buttons detail-button">Min. 1 Year</button>
+                                    <button className="search-buttons detail-button">Senior Level</button>
+                                </div>
+                                <div className="job-card-buttons">
+                                    <button className="search-buttons card-buttons">Apply Now</button>
+                                    <button className="search-buttons card-buttons-msg">Messages</button>
+                                </div>
+                            </div>
+                            <div className="job-card">
+                                <div className="job-card-header">
+                                    <FaUserFriends className="h-4 w-4" />
+                                    <div className="menu-dot"></div>
+                                </div>
+                                <div className="job-card-title">User Experience Designer</div>
+                                <div className="job-card-subtitle">
+                                    The User Experience Designer position exists to create compelling and digital user experience through excellent design...
+                                </div>
+                                <div className="job-detail-buttons">
+                                    <button className="search-buttons detail-button">Full Time</button>
+                                    <button className="search-buttons detail-button">Min. 1 Year</button>
+                                    <button className="search-buttons detail-button">Senior Level</button>
+                                </div>
+                                <div className="job-card-buttons">
+                                    <button className="search-buttons card-buttons">Apply Now</button>
+                                    <button className="search-buttons card-buttons-msg">Messages</button>
+                                </div>
+                            </div>
+                            <div className="job-card">
+                                <div className="job-card-header">
+                                    <FaUserFriends className="h-4 w-4" />
+                                    <div className="menu-dot"></div>
+                                </div>
+                                <div className="job-card-title">Product Designer</div>
+                                <div className="job-card-subtitle">
+                                    The User Experience Designer position exists to create compelling and digital user experience through excellent design...
+                                </div>
+                                <div className="job-detail-buttons">
+                                    <button className="search-buttons detail-button">Full Time</button>
+                                    <button className="search-buttons detail-button">Min. 1 Year</button>
+                                    <button className="search-buttons detail-button">Senior Level</button>
+                                </div>
+                                <div className="job-card-buttons">
+                                    <button className="search-buttons card-buttons">Apply Now</button>
+                                    <button className="search-buttons card-buttons-msg">Messages</button>
+                                </div>
+                            </div>
+                            <div className="job-card">
+                                <div className="job-card-header">
+                                    <FaUserFriends className="h-4 w-4" />
+                                    <div className="menu-dot"></div>
+                                </div>
+                                <div className="job-card-title">UI / UX Designer</div>
+                                <div className="job-card-subtitle">
+                                    The User Experience Designer position exists to create compelling and digital user experience through excellent design...
+                                </div>
+                                <div className="job-detail-buttons">
+                                    <button className="search-buttons detail-button">Full Time</button>
+                                    <button className="search-buttons detail-button">Min. 1 Year</button>
+                                    <button className="search-buttons detail-button">Senior Level</button>
+                                </div>
+                                <div className="job-card-buttons">
+                                    <button className="search-buttons card-buttons">Apply Now</button>
+                                    <button className="search-buttons card-buttons-msg">Messages</button>
+                                </div>
+                            </div>
+                            <div className="job-card">
+                                <div className="job-card-header">
+                                    <FaUserFriends className="h-4 w-4" />
+                                    <div className="menu-dot"></div>
+                                </div>
+                                <div className="job-card-title">UI Developer</div>
+                                <div className="job-card-subtitle">
+                                    The User Experience Designer position exists to create compelling and digital user experience through excellent design...
+                                </div>
+                                <div className="job-detail-buttons">
+                                    <button className="search-buttons detail-button">Full Time</button>
+                                    <button className="search-buttons detail-button">Min. 1 Year</button>
+                                    <button className="search-buttons detail-button">Senior Level</button>
+                                </div>
+                                <div className="job-card-buttons">
+                                    <button className="search-buttons card-buttons">Apply Now</button>
+                                    <button className="search-buttons card-buttons-msg">Messages</button>
+                                </div>
+                            </div>
+                            <div className="job-card">
+                                <div className="job-card-header">
+                                    <FaUserFriends className="h-4 w-4" />
+                                    <div className="menu-dot"></div>
+                                </div>
+                                <div className="job-card-title">User Interface Designer</div>
+                                <div className="job-card-subtitle">
+                                    The User Experience Designer position exists to create compelling and digital user experience through excellent design...
+                                </div>
+                                <div className="job-detail-buttons">
+                                    <button className="search-buttons detail-button">Full Time</button>
+                                    <button className="search-buttons detail-button">Min. 1 Year</button>
+                                    <button className="search-buttons detail-button">Senior Level</button>
+                                </div>
+                                <div className="job-card-buttons">
+                                    <button className="search-buttons card-buttons">Apply Now</button>
+                                    <button className="search-buttons card-buttons-msg">Messages</button>
+                                </div>
+                            </div>
+                            <div className="job-card">
+                                <div className="job-card-header">
+                                    <FaUserFriends className="h-4 w-4" />
+                                    <div className="menu-dot"></div>
+                                </div>
+                                <div className="job-card-title">UI / UX Designer</div>
+                                <div className="job-card-subtitle">
+                                    The User Experience Designer position exists to create compelling and digital user experience through excellent design...
+                                </div>
+                                <div className="job-detail-buttons">
+                                    <button className="search-buttons detail-button">Full Time</button>
+                                    <button className="search-buttons detail-button">Min. 1 Year</button>
+                                    <button className="search-buttons detail-button">Senior Level</button>
+                                </div>
+                                <div className="job-card-buttons">
+                                    <button className="search-buttons card-buttons">Apply Now</button>
+                                    <button className="search-buttons card-buttons-msg">Messages</button>
+                                </div>
+                            </div>
+                            <div className="job-card">
+                                <div className="job-card-header">
+                                    <FaUserFriends className="h-4 w-4" />
+                                    <div className="menu-dot"></div>
+                                </div>
+                                <div className="job-card-title">UX Designer</div>
+                                <div className="job-card-subtitle">
+                                    The User Experience Designer position exists to create compelling and digital user experience through excellent design...
+                                </div>
+                                <div className="job-detail-buttons">
+                                    <button className="search-buttons detail-button">Full Time</button>
+                                    <button className="search-buttons detail-button">Min. 1 Year</button>
+                                    <button className="search-buttons detail-button">Senior Level</button>
+                                </div>
+                                <div className="job-card-buttons">
+                                    <button className="search-buttons card-buttons">Apply Now</button>
+                                    <button className="search-buttons card-buttons-msg">Messages</button>
+                                </div>
+                            </div>
                         </div>
                         <div className="job-overview">
                             <div className="job-overview-cards">

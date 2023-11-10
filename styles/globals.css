@@ -280,14 +280,17 @@ body::-webkit-scrollbar-thumb {
   font-weight: 600;
 }
 
-.welcome-card {
+/* .welcome-card {
   --tw-shadow: 0px 0px 5px 0px #8b5cf6,0px 0px 20px 0px #6d28d9;
   --tw-shadow-colored: 0px 0px 5px 0px var(--tw-shadow-color),0px 0px 20px 0px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
-}
+} */
 .welcome-card:hover {
   border: 2px solid #AF40FF;
 }
+/* .fill-current {
+  color: #4ca5ff !important
+} */
 
 .welcome-card:hover h3{
   background: linear-gradient(30deg,#4ca5ff,#AF40FF);
@@ -298,7 +301,14 @@ body::-webkit-scrollbar-thumb {
   font-weight: 600;
 }
 
-
+.welcome-banner{
+    background-image: url('/images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: fit-content; 
+    opacity: 0.9;
+  }
 
 .sub-heading{
   isolation: isolate;
@@ -341,7 +351,6 @@ body::-webkit-scrollbar-thumb {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   position: relative;
-  margin-bottom: 20px;
 }
 .job-card .info {
   padding: 15px;
