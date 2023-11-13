@@ -33,7 +33,7 @@ const JobCard = ({ job, handleEdit, handleDelete, handleTagClick }) => {
 
   return (
     <div className="job-cards">
-    <div className="job-card">
+    <div className="job-card border shadow">
         <div className="job-card-header" >
           <div className="job-card-title" onClick={handleProfileClick}>{job.job_title}</div>
             <FaUserFriends className="h-4 w-4" />

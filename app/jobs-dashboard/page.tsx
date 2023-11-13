@@ -1,18 +1,18 @@
 import "@/styles/main.css" 
 import React from 'react' 
-import { myFunction } from '@/components/myJavaScriptFile.js'
+import  myFunction  from '@/components/myJavaScriptFile.js'
 import { FaUserFriends } from "react-icons/fa" 
 
 import JobFeeds from "@/components/JobFeed"
 
 
 const Page = () => { return (
-    <div>
+
         <div className="job">
             <div className="wrapper">
                 <div className="search-menu border">
                     <div className="search-bar">
-                        <input type="text" className="search-box" autofocus />
+                        <input type="text" className="search-box"  />
                         <div className="search item">
                             Product Designer
                             <FaUserFriends className="h-4 w-4" />
@@ -45,113 +45,78 @@ const Page = () => { return (
                             <button className="search-buttons">Create Job Alerts</button>
                         </div>
                         <div className="job-time">
-                            <div className="job-time-title font-semibold text-zinc-600">Type of Employment</div>
+                            <div className=" font-semibold text-zinc-600">Type of Employment</div>
                             <div className="job-wrapper">
                                 <div className="type-container">
                                     <input type="checkbox" id="job1" className="job-style" checked />
-                                    <label for="job1">Full Time Jobs</label>
+                                    <label htmlFor="job1">Full Time Jobs</label>
                                     <span className="job-number">56</span>
                                 </div>
                                 <div className="type-container">
                                     <input type="checkbox" id="job2" className="job-style" />
-                                    <label for="job2">Part Time Jobs</label>
+                                    <label htmlFor="job2">Part Time Jobs</label>
                                     <span className="job-number">43</span>
                                 </div>
                                 <div className="type-container">
                                     <input type="checkbox" id="job3" className="job-style" />
-                                    <label for="job3">Remote Jobs</label>
+                                    <label htmlFor="job3">Remote Jobs</label>
                                     <span className="job-number">24</span>
                                 </div>
                                 <div className="type-container">
                                     <input type="checkbox" id="job4" className="job-style" />
-                                    <label for="job4">Internship Jobs</label>
+                                    <label htmlFor="job4">Internship Jobs</label>
                                     <span className="job-number">27</span>
                                 </div>
-                                <div className="type-container">
-                                    <input type="checkbox" id="job5" className="job-style" />
-                                    <label for="job5">Contract</label>
-                                    <span className="job-number">76</span>
-                                </div>
-                                <div className="type-container">
-                                    <input type="checkbox" id="job6" className="job-style" />
-                                    <label for="job6">Training Jobs</label>
-                                    <span className="job-number">28</span>
-                                </div>
+                                
                             </div>
                         </div>
                         <div className="job-time">
-                            <div className="job-time-title">Seniority Level</div>
+                            <div className=" font-semibold text-zinc-600">Seniority Level</div>
                             <div className="job-wrapper">
-                                <div className="type-container">
-                                    <input type="checkbox" id="job7" className="job-style" />
-                                    <label for="job7">Student Level</label>
-                                    <span className="job-number">98</span>
-                                </div>
+                                
                                 <div className="type-container">
                                     <input type="checkbox" id="job8" className="job-style" />
-                                    <label for="job8">Entry Level</label>
+                                    <label htmlFor="job8">Entry Level</label>
                                     <span className="job-number">44</span>
                                 </div>
                                 <div className="type-container">
                                     <input type="checkbox" id="job9" className="job-style" checked />
-                                    <label for="job9">Mid Level</label>
+                                    <label htmlFor="job9">Mid Level</label>
                                     <span className="job-number">35</span>
                                 </div>
                                 <div className="type-container">
                                     <input type="checkbox" id="job10" className="job-style" checked />
-                                    <label for="job10">Senior Level</label>
+                                    <label htmlFor="job10">Senior Level</label>
                                     <span className="job-number">29</span>
                                 </div>
-                                <div className="type-container">
-                                    <input type="checkbox" id="job11" className="job-style" />
-                                    <label for="job11">Directors</label>
-                                    <span className="job-number">26</span>
-                                </div>
-                                <div className="type-container">
-                                    <input type="checkbox" id="job12" className="job-style" />
-                                    <label for="job12">VP or Above</label>
-                                    <span className="job-number">56</span>
-                                </div>
+                               
                             </div>
                         </div>
                         <div className="job-time">
-                            <div className="job-time-title">Salary Range</div>
+                            <div className=" font-semibold text-zinc-600">Salary Range</div>
                             <div className="job-wrapper">
                                 <div className="type-container">
                                     <input type="checkbox" id="job1" className="job-style" />
-                                    <label for="job1">$700 - $1000</label>
+                                    <label htmlFor="job1">$700 - $1000</label>
                                     <span className="job-number">49</span>
                                 </div>
-                                <div className="type-container">
-                                    <input type="checkbox" id="job2" className="job-style" />
-                                    <label for="job2">$1000 - $1200</label>
-                                    <span className="job-number">67</span>
-                                </div>
-                                <div className="type-container">
-                                    <input type="checkbox" id="job3" className="job-style" />
-                                    <label for="job3">$1200 - $1400</label>
-                                    <span className="job-number">24</span>
-                                </div>
+                              
                                 <div className="type-container">
                                     <input type="checkbox" id="job4" className="job-style" />
-                                    <label for="job4">$1500 - $1800</label>
+                                    <label htmlFor="job4">$1500 - $1800</label>
                                     <span className="job-number">27</span>
                                 </div>
                                 <div className="type-container">
                                     <input type="checkbox" id="job5" className="job-style" checked />
-                                    <label for="job5">$2000 - $3000</label>
+                                    <label htmlFor="job5">$2000 - $3000</label>
                                     <span className="job-number">76</span>
                                 </div>
                                 <div className="type-container">
                                     <input type="checkbox" id="job6" className="job-style" checked />
-                                    <label for="job6">$3000 - $4000</label>
+                                    <label htmlFor="job6">$3000 - $4000</label>
                                     <span className="job-number">22</span>
                                 </div>
-                                <div className="type-container">
-                                    <input type="checkbox" id="job6" className="job-style" />
-                                    <label for="job6">$4000 - $5000</label>
-                                    <span className="job-number">18</span>
-                                </div>
+                               
                             </div>
                         </div>
                     </div>
@@ -573,6 +538,5 @@ const Page = () => { return (
                 </div>
             </div>
         </div>
-    </div>
     ); }; export default Page;
     

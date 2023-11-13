@@ -63,16 +63,7 @@ const Page = () => { return (
                                     <label for="job4">Internship Jobs</label>
                                     <span className="job-number">27</span>
                                 </div>
-                                <div className="type-container">
-                                    <input type="checkbox" id="job5" className="job-style" />
-                                    <label for="job5">Contract</label>
-                                    <span className="job-number">76</span>
-                                </div>
-                                <div className="type-container">
-                                    <input type="checkbox" id="job6" className="job-style" />
-                                    <label for="job6">Training Jobs</label>
-                                    <span className="job-number">28</span>
-                                </div>
+                               
                             </div>
                         </div>
                         <div className="job-time">

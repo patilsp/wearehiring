@@ -100,6 +100,7 @@ body {
   margin: 0 auto;
   overflow: hidden;
   background-color: var(--theme-bg-color);
+  height: 100vh
 }
 
 .logo {
@@ -186,7 +187,7 @@ body {
   flex-direction: column;
   flex-grow: 1;
   scroll-behavior: smooth;
-  padding: 15px 20px;
+  padding: 15px 10px !important;
   overflow: auto;
 }
 
@@ -1021,4 +1022,26 @@ body {
   height: 100vh;
   position: absolute;
 
+}
+
+
+
+.wrapper{
+  --scrollbarBG: #fafafb;
+  --thumbBG: #90A4AE;
+}
+.wrapper::-webkit-scrollbar {
+  width: 11px;
+}
+.wrapper {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+.wrapper::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+.wrapper::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG) ;
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
 }
