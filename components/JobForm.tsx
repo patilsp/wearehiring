@@ -63,16 +63,7 @@ const JobForm = ({ type, job, setJob, submitting, handleSubmit }) => {
             className="input"
           />
         </div>
-        <div className="w-full">
-          <Label htmlFor="title">Company Website</Label>
-          <Input
-            value={job.link}
-            onChange={(e) => setJob({ ...job, link: e.target.value })}
-            placeholder="Link to apply"
-            required
-            className="input"
-          />
-        </div>
+       
 
         <div className="w-full">
           <Label htmlFor="title">Job Location</Label>
@@ -108,9 +99,9 @@ const JobForm = ({ type, job, setJob, submitting, handleSubmit }) => {
           />
         </div>
 
-    
+        
 
-        <div className="w-full">
+        {/* <div className="w-full">
           <Label htmlFor="job_type">Job Type</Label>
           <Select>
             <SelectTrigger
@@ -126,9 +117,9 @@ const JobForm = ({ type, job, setJob, submitting, handleSubmit }) => {
               <SelectItem value="workfromhome">Work From Home</SelectItem>
             </SelectContent>
           </Select>
-        </div>
+        </div> */}
 
-        <div className="w-full">
+        {/* <div className="w-full">
           <Label htmlFor="status">Status</Label>
           <Select>
             <SelectTrigger
@@ -160,7 +151,7 @@ const JobForm = ({ type, job, setJob, submitting, handleSubmit }) => {
               <SelectItem value="Pune">Pune</SelectItem>
             </SelectContent>
           </Select>
-        </div>
+        </div> */}
         
         <div className="w-full">
           <Label htmlFor="description">Job Description</Label>

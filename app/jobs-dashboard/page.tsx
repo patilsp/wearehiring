@@ -14,7 +14,7 @@ const Page = () => { return (
                     <div className="search-bar">
                         <input type="text" className="search-box"  />
                         <div className="search item">
-                            Product Designer
+                            UI/UX Designer
                             <FaUserFriends className="h-4 w-4" />
                         </div>
                         <div className="search item">
@@ -24,7 +24,7 @@ const Page = () => { return (
                     </div>
                     <div className="search-location">
                         <FaUserFriends className="h-4 w-4" />
-                        Londontowne, MD
+                        Pune
                     </div>
                     <div className="search-job">
                         <FaUserFriends className="h-4 w-4" />
