@@ -16,6 +16,7 @@ import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/registry/new-york/ui/button";
 import { Icons } from "@/components/icons";
 
+
 import {
   FaCheck,
   FaSearch,
@@ -35,79 +36,37 @@ export default function Home() {
         animate="visible"
         className="z-[20] flex w-full flex-col items-center justify-center"
       >
-          <section className="welcome-banner relative flex h-full w-full flex-col items-center justify-center gap-3  overflow-hidden">
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 1 }}
+       
+       <section className="space-y-6 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32">
+        <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center">
+          <Link
+            href="#"
+            className="rounded-2xl bg-muted px-4 py-1.5 text-sm font-medium"
+            target="_blank"
           >
-            
-
-
-            <div className="item-center m-auto flex max-w-[85%] flex-row justify-center">
-              <div className="slider">
-                {/* <div className="slide-track flex">
-                  <div className="slide">
-                    <Image
-                      src="/images/github.png"
-                      height="100"
-                      width="250"
-                      alt="image"
-                    />
-                  </div>
-                  <div className="slide">
-                    <Image
-                      src="/images/github.png"
-                      height="100"
-                      width="250"
-                      alt="image"
-                    />
-                  </div>
-                  <div className="slide">
-                    <Image
-                      src="/images/github.png"
-                      height="100"
-                      width="250"
-                      alt="image"
-                    />
-                  </div>
-                  <div className="slide">
-                    <Image
-                      src="/images/github.png"
-                      height="100"
-                      width="250"
-                      alt="image"
-                    />
-                  </div>
-                  <div className="slide">
-                    <Image
-                      src="/images/github.png"
-                      height="100"
-                      width="250"
-                      alt="image"
-                    />
-                  </div>
-                  <div className="slide">
-                    <Image
-                      src="/images/github.png"
-                      height="100"
-                      width="250"
-                      alt="image"
-                    />
-                  </div>
-                  <div className="slide">
-                    <Image
-                      src="/images/github.png"
-                      height="100"
-                      width="250"
-                      alt="image"
-                    />
-                  </div>
-                </div> */}
-              </div>
-            </div>
-          </motion.div>
-        </section>
+            We are your feature
+          </Link>
+          <h1 className="text-4xl font-bold sm:text-5xl md:text-6xl lg:text-7xl">
+            Get Your Desired <br /> <span className="text_primary">job with Findy.</span> 
+          </h1>
+          <p className="max-w-[42rem] leading-normal text-slate-700 sm:text-xl sm:leading-8">
+           Get Jobs, Create trackable resumes and enrich your application.
+          </p>
+          <div className="space-x-4">
+            <Link href="/login" className={cn(buttonVariants({ size: "lg" }))}>
+              Get Started
+            </Link>
+            <Link
+              href="#"
+              target="_blank"
+              rel="noreferrer"
+              className={cn(buttonVariants({ variant: "outline", size: "lg" }))}
+            >
+              Know More 
+            </Link>
+          </div>
+        </div>
+      </section>
 
 
         <section className="space-y-2 py-2">
@@ -137,10 +96,10 @@ export default function Home() {
                 <div className="mx-auto flex w-full flex-col justify-center space-y-6 sm:w-[555px]">
                   <div className="flex flex-col space-y-2 text-center">
                     <div className="text-left">
-                      <p className="text_primary text-left text-4xl font-extrabold tracking-tight text-primary dark:text-white sm:text-5xl lg:text-6xl">
-                        Lets Find Your <br /> Dream Job Here{" "}
+                      <p className="text-left text-4xl font-extrabold tracking-tight text-primary dark:text-white sm:text-5xl lg:text-6xl">
+                        Search, Apply & <br /> Get <span className="text_primary">Your Dream Job</span>
                       </p>
-                      <p className="mt-6 text-lg leading-8 text-slate-700">
+                      <p className="mt-6 text-xl leading-8 text-zinc-800">
                         Join the best tech startups in the industry
                       </p>
 
@@ -153,7 +112,7 @@ export default function Home() {
                         industry.
                       </motion.p>
                       <div className="items-left justify-left mt-10 flex gap-x-6">
-                        <Link href="/jobs-dashboard" className="btn-primary">
+                        <Link href="/login" className="btn-primary">
                           Get started
                         </Link>
                         <a
@@ -356,8 +315,8 @@ export default function Home() {
             transition={{ duration: 1, delay: 1 }}
           >
             <div className="mx-auto mb-4 flex max-w-[58rem] flex-col items-center space-y-4 text-center">
-              <h2 className="text_primary font-heading text-3xl font-bold leading-[1.1] sm:text-xl md:text-6xl">
-                Easy way to get your next job
+              <h2 className="font-heading text-3xl font-bold leading-[1.1] sm:text-xl md:text-6xl">
+                Get Hired In <span className="text_primary"> 6 Quick Easy Steps </span>
               </h2>
               <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
                 This project is an experiment to see how a modern job
@@ -369,11 +328,14 @@ export default function Home() {
               <div className="welcome-card relative overflow-hidden rounded-lg border bg-background p-2">
                 <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
                   {/* <FaLogin className="h-12 w-12 fill-current" /> */}
-                  <FaRegistered className="h-12 w-12 fill-current" />
+                  
                   <div className="space-y-2">
-                    <h3 className="font-bold text-zinc-700">Register An account</h3>
+                    <div className="flex items-center justify-start gap-2">
+                      <FaRegistered className="h-12 w-12 fill-current" />
+                      <h3 className="font-bold text-zinc-700">Create An account</h3>
+                    </div>
                     <p className="text-sm text-muted-foreground">
-                      First you have to create an account here.
+                     Sign-up for the job applicant profile, Mention your qualifications, past experience, and expertise and scope of your interest.
                     </p>
                   </div>
                 </div>
@@ -381,11 +343,16 @@ export default function Home() {
 
               <div className="welcome-card relative overflow-hidden rounded-lg border bg-background p-2">
                 <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
-                  <FaSearch className="h-12 w-12 fill-current" />
+                  
                   <div className="space-y-2">
-                    <h3 className="font-bold text-zinc-700">Search Your Job</h3>
+                  <div className="flex items-center justify-start gap-2">
+                      <FaSearch className="h-12 w-12 fill-current" />
+                      <h3 className="font-bold text-zinc-700">Search Your Job</h3>
+                    </div>
+
+                    
                     <p className="text-sm">
-                      You select which positions you wish to apply.
+                      Once you set the job hunting parameters, you will find many openings related to your career interest on the home page.
                     </p>
                   </div>
                 </div>

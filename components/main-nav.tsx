@@ -18,7 +18,7 @@ export function MainNav() {
      
       <nav className="nav-link flex items-center space-x-6 rounded-3xl border px-4 py-2 text-sm font-bold">
         <Link
-          href="/"
+          href="/jobs-dashboard"
           className={cn(
             "hero-heading transition-colors hover:text-foreground/80",
             pathname === "/docs" ? "text-foreground" : "text-foreground/60"
@@ -54,13 +54,13 @@ export function MainNav() {
           Companies
         </Link>
         <Link
-          href="/jobs-dashboard"
+          href="/hiring"
           className={cn(
             "hero-heading transition-colors hover:text-foreground/80",
             pathname === "/messages" ? "text-foreground" : "text-foreground/60"
           )}
         >
-          Jobs
+          Hire
         </Link>
         <Link
           href="/forms"
