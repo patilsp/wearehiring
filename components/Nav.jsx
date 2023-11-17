@@ -130,7 +130,7 @@ const Nav = () => {
               <DropdownMenuSeparator />
               <div className="mt-2">
                 <Link
-                  href="/Pricing"
+                  href="/pricing"
                   target="_blank"
                   className="btn-primary m-auto h-8 w-full text-center"
                 >

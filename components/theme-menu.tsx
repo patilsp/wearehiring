@@ -52,14 +52,14 @@ export function ThemeMenu({ ...props }: DialogProps) {
       <Button
         variant="outline-none"
         className={cn(
-          "relative w-full cursor-pointer justify-between px-2 text-sm text-muted-foreground shadow-none sm:pr-12 md:w-40 lg:w-64"
+          "relative w-full cursor-pointer justify-between px-2 text-sm text-muted-foreground shadow-none hover:bg-muted sm:pr-12 md:w-40 lg:w-64"
         )}
         onClick={() => setOpen(true)}
         {...props}
       >
         <span className="inline-flex text-slate-700 dark:text-white">Change Theme</span>
-        <kbd className="pointer-events-none absolute right-1.5 top-1.5 hidden h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium opacity-100 sm:flex">
-          <span className="text-xs">⌘</span>D
+        <kbd className="pointer-events-none absolute right-1 top-1.5 hidden h-5 select-none items-center gap-1 rounded px-1.5 font-mono text-[10px] font-medium opacity-100 sm:flex">
+          ⌘ D
         </kbd>
       </Button>
       <CommandDialog open={open} onOpenChange={setOpen}>

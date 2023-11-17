@@ -60,7 +60,7 @@ export function MainNav() {
             pathname === "/messages" ? "text-foreground" : "text-foreground/60"
           )}
         >
-          Hire
+          Jobs
         </Link>
         <Link
           href="/forms"

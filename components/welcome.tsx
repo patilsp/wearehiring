@@ -137,7 +137,7 @@ export default function Home() {
                 <div className="mx-auto flex w-full flex-col justify-center space-y-6 sm:w-[555px]">
                   <div className="flex flex-col space-y-2 text-center">
                     <div className="text-left">
-                      <p className="text_primary text-left text-4xl font-extrabold tracking-tight dark:text-white sm:text-5xl lg:text-6xl">
+                      <p className="text_primary text-left text-4xl font-extrabold tracking-tight text-primary dark:text-white sm:text-5xl lg:text-6xl">
                         Lets Find Your <br /> Dream Job Here{" "}
                       </p>
                       <p className="mt-6 text-lg leading-8 text-slate-700">
@@ -189,7 +189,7 @@ export default function Home() {
                 <div className="mx-auto flex w-full flex-col justify-center space-y-6 sm:w-[555px]">
                   <div className="flex flex-col space-y-2 text-center">
                     <div className="text-left">
-                      <p className="text_primary text-left text-4xl font-extrabold tracking-tight dark:text-white sm:text-5xl lg:text-6xl">
+                      <p className="text-left text-4xl font-extrabold tracking-tight text-primary dark:text-white sm:text-5xl lg:text-6xl">
                         Project-based freelance work 
                       </p>
                       <p className="mt-6 text-lg leading-8 text-slate-700">
@@ -270,7 +270,7 @@ export default function Home() {
               >
                 <div className="text-card-foreground">
                 <Image 
-                      src="/images/users.png"
+                      src="/images/hiring.svg"
                       width={500}
                       height={600}
                       alt="users"
@@ -290,7 +290,7 @@ export default function Home() {
                 <div className="mx-auto flex w-full flex-col justify-center space-y-6 sm:w-[555px]">
                   <div className="flex flex-col space-y-2 text-center">
                     <div className="text-left">
-                      <p className="text_primary text-left text-2xl font-extrabold tracking-tight dark:text-white sm:text-5xl lg:text-4xl">
+                      <p className="text-left text-2xl font-extrabold tracking-tight text-primary dark:text-white sm:text-5xl lg:text-4xl">
                         We providing place you <br /> You can get trusted job
                       </p>
                       
@@ -371,7 +371,7 @@ export default function Home() {
                   {/* <FaLogin className="h-12 w-12 fill-current" /> */}
                   <FaRegistered className="h-12 w-12 fill-current" />
                   <div className="space-y-2">
-                    <h3 className="font-bold text-purple-400">Register An account</h3>
+                    <h3 className="font-bold text-zinc-700">Register An account</h3>
                     <p className="text-sm text-muted-foreground">
                       First you have to create an account here.
                     </p>
@@ -383,7 +383,7 @@ export default function Home() {
                 <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
                   <FaSearch className="h-12 w-12 fill-current" />
                   <div className="space-y-2">
-                    <h3 className="font-bold text-purple-400">Search Your Job</h3>
+                    <h3 className="font-bold text-zinc-700">Search Your Job</h3>
                     <p className="text-sm">
                       You select which positions you wish to apply.
                     </p>
@@ -395,7 +395,7 @@ export default function Home() {
                 <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
                   <FaUserLock className="h-12 w-12 fill-current" />
                   <div className="space-y-2">
-                    <h3 className="font-bold text-purple-400">Apply For Job</h3>
+                    <h3 className="font-bold text-zinc-700">Apply For Job</h3>
                     <p className="text-sm text-muted-foreground">
                       Finally you apply your job and enjoy your work.
                     </p>
@@ -406,7 +406,7 @@ export default function Home() {
                 <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
                   <FaRegSun className="h-12 w-12 fill-current" />
                   <div className="space-y-2">
-                    <h3 className="font-bold text-purple-400">Companies</h3>
+                    <h3 className="font-bold text-zinc-700">Companies</h3>
                     <p className="text-sm text-muted-foreground">
                       Find the companies and apply for the job.
                     </p>
@@ -417,7 +417,7 @@ export default function Home() {
                 <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
                   <FaShieldAlt className="h-12 w-12 fill-current" />
                   <div className="space-y-2">
-                    <h3 className="font-bold text-purple-400">Authentication</h3>
+                    <h3 className="font-bold text-zinc-700">Authentication</h3>
                     <p className="text-sm text-muted-foreground">
                       Authentication using NextAuth.js and middlewares.
                     </p>
@@ -428,7 +428,7 @@ export default function Home() {
                 <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
                   <FaWallet className="h-12 w-12 fill-current" />
                   <div className="space-y-2">
-                    <h3 className="font-bold text-purple-400">Subscriptions</h3>
+                    <h3 className="font-bold text-zinc-700">Subscriptions</h3>
                     <p className="text-sm text-muted-foreground">
                       Free and paid subscriptions using Stripe.
                     </p>
@@ -444,72 +444,9 @@ export default function Home() {
             </div>
           </motion.div>
         </section>
-        {/* <hr className="nx-my-8 dark:nx-border-gray-900"> */}
+       
 
-        <section className="container flex flex-col  gap-6 py-8 md:max-w-[64rem] md:py-12 lg:py-24">
-          <div className="flex w-full justify-center">
-            <h1 className="sub-heading"> Get Access </h1>
-          </div>
-          <div className="mx-auto flex w-full flex-col gap-4">
-            <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
-              We like keeping things simple,{" "}
-              <p className="heading">One plan one price </p>
-            </h2>
-            <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-              Unlock all features including unlimited jobs for your application.
-            </p>
-          </div>
-          <div className="grid w-full items-start gap-10 rounded-lg border  p-10 md:grid-cols-[1fr_200px]">
-            <div className="grid gap-6">
-              <h3 className="text-xl font-bold sm:text-2xl">
-                What&apos;s included in the PRO plan
-              </h3>
-              <ul className="grid gap-3 text-sm sm:grid-cols-2">
-                <li className="flex items-center">
-                  <FaCheck className="mr-2 h-4 w-4" /> Unlimited Jobs
-                </li>
-                <li className="flex items-center">
-                  <FaCheck className="mr-2 h-4 w-4" /> Unlimited Users
-                </li>
-
-                <li className="flex items-center">
-                  <FaCheck className="mr-2 h-4 w-4" /> Custom domain
-                </li>
-                <li className="flex items-center">
-                  <FaCheck className="mr-2 h-4 w-4" /> Dashboard Analytics
-                </li>
-                <li className="flex items-center">
-                  <FaCheck className="mr-2 h-4 w-4" /> Access to Discord
-                </li>
-                <li className="flex items-center">
-                  <FaCheck className="mr-2 h-4 w-4" /> Premium Support
-                </li>
-              </ul>
-            </div>
-            <div className="flex flex-col gap-4 text-center">
-              <div>
-                <h4 className="mb-2 text-7xl font-bold text-slate-700">$10</h4>
-                <p className="text-sm font-medium text-gray-300">
-                  (if billed annually)  
-                </p>
-              </div>
-              <Link
-                href="/login"
-                className="btn-primary"
-              >
-                Get Started
-              </Link>
-            </div>
-          </div>
-          <div className="mx-auto flex w-full max-w-[58rem] flex-col gap-4">
-            <p className="max-w-[85%] leading-normal text-muted-foreground sm:leading-7">
-              This is a demo app.{" "}
-              <strong>
-                You can test the upgrade and won&apos;t be charged.
-              </strong>
-            </p>
-          </div>
-        </section>
+        
       </motion.div>
     </div>
   );
