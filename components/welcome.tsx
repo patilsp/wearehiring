@@ -47,7 +47,7 @@ export default function Home() {
             We are your feature
           </Link>
           <h1 className="text-4xl font-bold sm:text-5xl md:text-6xl lg:text-7xl">
-            Get Your Desired <br /> <span className="text_primary">job with Findy.</span> 
+            Get Your Desired <br /> <span className="text_primary">job with Talent Hub.</span> 
           </h1>
           <p className="max-w-[42rem] leading-normal text-slate-700 sm:text-xl sm:leading-8">
            Get Jobs, Create trackable resumes and enrich your application.
